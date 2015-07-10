@@ -71,6 +71,8 @@ https://developer.amazon.com/appsandservices/solutions/alexa/alexa-skills-kit/do
 }
 ```
 
+0. Copy the function ID such as "ARN - arn:aws:lambda:us-east-1:495111183449:function:Roku"
+   Application ID amzn1.echo-sdk-ams.app.here
 
 https://developer.amazon.com/public/solutions/alexa/alexa-skills-kit/docs/handling-requests-sent-by-alexa
 
@@ -88,3 +90,5 @@ with wakeup command "Alexa simon says"
 
 ## <a name="Laravel"> Laravel compatibility</a>
 https://github.com/develpr/alexa-app
+
+
