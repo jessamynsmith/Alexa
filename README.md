@@ -1,10 +1,25 @@
-# Alexa
+# Alexa in Amazon Echo
 
 Based on https://developer.amazon.com/appsandservices/solutions/alexa/alexa-skills-kit/getting-started-guide
 
-When a user asks Alexa a question or tells Alexa to do something, that request is sent 
-thru the wi-fi over the public internet to the Alexa service in the Amazon cloud.
-The service sends back text that Alexa converts to speech to the user. 
+Amazon Echo has a text-to-speech and speech-to-text chips.
+
+When a user asks Alexa a question or tells Alexa to do something,
+Echo converts speech to text and sends that text
+thru wi-fi then over the public internet to a web service in the Amazon cloud.
+
+The web service can be Amazon's Lambda event service or a custom service that
+sends back text which Alexa converts to speech to the user.
+
+In this sample spoken by a user:
+
+    “Alexa, ask Greeter to say hello world.”
+
+    * "Alexa" is the wake word.
+    * "ask" requests an "ability" aka skill.
+    * "Greeter" is the invocation name.
+    * "Say"
+    * "hello world"
 
 Borrowing a term from Android, <strong>intents</strong> are what a cloud-based service can handle,
 using case-insensitive alphabetical characters.
