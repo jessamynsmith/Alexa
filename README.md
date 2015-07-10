@@ -40,6 +40,7 @@ https://aws.amazon.com/blogs/compute/slack-dictation-an-amazon-echo-and-aws-lamb
 0. Since Amazon Echo cannot access devices on your local area network, 
     set up port forwarding on your router for port 8060 to your Roku's IP.
 
+## <a name="CustomLambda"> New Lambda Service</a>
 Following:
 https://developer.amazon.com/appsandservices/solutions/alexa/alexa-skills-kit/docs/developing-an-alexa-skill-as-a-lambda-function
 
@@ -74,6 +75,8 @@ https://developer.amazon.com/appsandservices/solutions/alexa/alexa-skills-kit/do
 
 0. Copy the function ID such as "ARN - arn:aws:lambda:us-east-1:495111183449:function:Roku"
    Application ID amzn1.echo-sdk-ams.app.here
+0. Zip up
+0. Upload the zip file to Amazon.
 
 https://developer.amazon.com/public/solutions/alexa/alexa-skills-kit/docs/handling-requests-sent-by-alexa
 
