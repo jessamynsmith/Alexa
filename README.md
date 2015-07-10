@@ -16,7 +16,7 @@ In this sample spoken by a user:
     “Alexa, ask Greeter to say hello world.”
 
     * "Alexa" is the wake word.
-    * "ask" requests an "ability" aka skill.
+    * "ask" verb requests an "ability" aka skill.
     * "Greeter" is the invocation name.
     * "Say"
     * "hello world"
@@ -32,6 +32,9 @@ https://developer.amazon.com/public/solutions/alexa/alexa-skills-kit/docs/alexa-
 https://github.com/MrEggsalad/Echo-Roku-Voice-Control
 Use Amazon Echo to control Roku 
 utilizing Roku's External Control Guide API http://sdkdocs.roku.com/display/sdkdoc/External+Control+Guide .
+
+https://aws.amazon.com/blogs/compute/slack-dictation-an-amazon-echo-and-aws-lambda-demo/
+
 
 0. Since Amazon Echo cannot access devices on your local area network, 
     set up port forwarding on your router for port 8060 to your Roku's IP.
@@ -81,3 +84,7 @@ for configuration driven automation of tasks driven by the Amazon Echo Todo list
 
 send tweets and start programs from Amazon echo.
 with wakeup command "Alexa simon says"
+
+
+## <a name="Laravel"> Laravel compatibility</a>
+https://github.com/develpr/alexa-app
