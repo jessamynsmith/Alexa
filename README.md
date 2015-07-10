@@ -307,9 +307,81 @@ alt="roku-108x108.png" />
 18) Click Save or, if you're ready, Submit for Certification.
 
 
+## <a name="AlexaSkillsKit">Java Sample AlexaSkillsKit.zip</a>
+While signed into the Developer Console, download
 https://developer.amazon.com/edw/res/download/AlexaSkillsKit.zip
 
+In the <strong>samples</strong> folder, 
+helloworld and session folders each contain a
+<strong>slu</strong> folder containing the 
+IntentSchema.json and SampleUtterances.baf file:
+
+```
+MyColorIsIntent  my color is {dark brown|Color}
+MyColorIsIntent  my color is {green|Color}
+MyColorIsIntent  my favorite color is {red|Color}
+MyColorIsIntent  my favorite color is {navy blue|Color}
+WhatsMyColorIntent whats my color
+WhatsMyColorIntent what is my color
+WhatsMyColorIntent say my color
+WhatsMyColorIntent tell me my color
+WhatsMyColorIntent whats my favorite color
+WhatsMyColorIntent what is my favorite color
+WhatsMyColorIntent say my favorite color
+WhatsMyColorIntent tell me my favorite color
+WhatsMyColorIntent tell me what my favorite color is
+```
+
+These are the same as for the Node.js example.
+
+However, this set of sample assets was written to run on a Java, or more specifically, a J2EE server.
+
+So each folder in samples contains a Speechlet.java file.
+
+Also in the <strong>samples</strong> folder 
+is a Launcher.java file built by ant using the <strong>build.xml</strong> file included:
+
+```
+<!-- Ant build script for compiling and running the Echo SDK samples. -->
+<project name="Amazon Echo SDK Samples" default="run" basedir=".">
+    <path id="java.sdk.classpath">
+        <fileset dir="../lib" includes="**/*.jar"/>
+        <fileset dir="../third-party" includes="**/*.jar"/>
+        <pathelement location="."/>
+    </path>
+
+    <property name="disableRequestSignatureCheck" value="false"/>
+    <property name="supportedApplicationIds" value=""/>
+    <property name="timestampTolerance" value="150"/>
+
+    <target name="run">
+        <javac srcdir="." destdir="." classpathref="java.sdk.classpath"/>
+        <java classname="Launcher" classpathref="java.sdk.classpath" fork="true">
+            <sysproperty key="javax.net.ssl.keyStore" value=""/>
+            <sysproperty key="javax.net.ssl.keyStorePassword" value=""/>
+            <sysproperty key="com.amazon.speech.speechlet.servlet.disableRequestSignatureCheck"
+                value="${disableRequestSignatureCheck}"/>
+            <sysproperty key="com.amazon.speech.speechlet.servlet.supportedApplicationIds"
+                value="${supportedApplicationIds}"/>
+            <sysproperty key="com.amazon.speech.speechlet.servlet.timestampTolerance"
+                value="${timestampTolerance}"/>
+        </java>
+    </target>
+</project>
+```
+
+So it has a "third-party" folder containing jar files in folder j2ee_servlet, log4j, Jetty, 
+<a target="_blank" href="http://jakarta.apache.org/">Jakarta</a> (which has been retired since 2011 by Apache
+in favor of http://jmeter.apache.org/), and Jackson (for JSON processing).
+
+In the lib folder is the <strong>alexa-skills-kit-1.0.120.0.jar</strong>
+file which compresses a MANIFEST file describing code in folder com.amazon.speech.
+
+
+## <a name="AlexaLambdaSamleKit">AlexaLambdaExamples.zip</a>
+While signed into the Developer Console, download
 https://developer.amazon.com/edw/res/download/AlexaLambdaExamples.zip
+
 
 ## <a name="Intents"> Intents</a>
 Borrowing a term from Android, <strong>intents</strong> is what a cloud-based service can handle,
