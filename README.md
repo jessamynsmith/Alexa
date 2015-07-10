@@ -206,8 +206,28 @@ The files:
 
 Let's use the contents of these files to setup our own Roku voice controller.
 
+### <a name="PortForwarding"> Port Forwarding</a>
+0. Since Amazon Echo cannot access devices on your local area network, 
+    set up port forwarding on your router for port 8060 to your Roku's IP.
 
-## <a name="DeveloperConsole"> Developer Console</a>
+0. In an internet browser, go to http://whatismyip.com to get your 
+      <strong>public IP address</strong>, such as 72.21.61.71.
+
+1. Click "Check for Proxy".
+
+0. Find the Roku IP address on the TV at Roku menu: Settings | Network, Enter.
+ 
+      VIDEO: https://www.youtube.com/watch?v=757nLvUvIgM
+      
+      On your computer go to network and sharing center. You will see your computer, your network, and the internet. 
+      Click on your network. Once inside your router, your computer will see the roku player. 
+      Click on it and you'll see the ip address and mac address.
+ 
+      Or see http://photobridge.roku.com/downloads/pb_support_downloads/StaticIPAddress_HD1000.pdf
+
+      NOTE: The Roku OS is only able to get an IP via DHCP 
+      
+### <a name="DeveloperConsole"> Developer Console</a>
 1) Sign directly into the Alexa Developer Console at <a target="_blank" href=""https://developer.amazon.com/home.html">
    https://developer.amazon.com/home.html</a> rather than the 
    <a target="_blank" href="https://developer.amazon.com/edw/home.html#/"> Dashboard to all services</a>.
@@ -234,7 +254,24 @@ Let's use the contents of these files to setup our own Roku voice controller.
 8) Copy the contents of the Roku Github repo file <strong>intentSchema.json</strong> and paste into the 
    <strong>Intent Schema*</strong> box.
    The schema of user intents in JSON format
-   is described at https://developer.amazon.com/appsandservices/solutions/alexa/alexa-skills-kit/docs/defining-the-voice-interface
+   is described at 
+   https://developer.amazon.com/appsandservices/solutions/alexa/alexa-skills-kit/docs/defining-the-voice-interface
+
+```
+{
+  "intents": [
+    {
+      "intent": "RokuIntent",
+      "slots": [
+        {
+          "name": "Control",
+          "type": "LITERAL"
+        }
+      ]
+    }
+  ]
+}
+```
 
 9) Copy the contents of the Roku Github repo file <strong>SampleUtterances.txt</strong> and paste into the 
  Sample Utterances box.
@@ -249,6 +286,24 @@ alt="roku-108x108.png" />
     Size 108x108 pixels, in PNG or JPG format. This is displayed in the Echo app. 
 
 11) Click <strong>Image</strong> and select
+
+12) For Category, select Home Automation.
+
+13) For Skill Description, type "Control Roku without a remote by talking to Alexa living in the Amazon Echo".
+
+14) Some Sample Phrases:
+
+      * Alexa, have Roku play
+      * Alexa, have Roku pause
+      * Alexa, have Roku forward
+
+15) QUESTION: Is there a Privacy Policy URL and Terms of Use URL I can use without having my own website?
+
+16) QUESTION: Is there a Privacy Policy URL I can use without having my own website?
+
+17) Check the Export Compliance checkbox.
+
+18) Click Save or, if you're ready, Submit for Certification.
 
 
 https://developer.amazon.com/edw/res/download/AlexaSkillsKit.zip
@@ -276,14 +331,6 @@ and to confirm:
 Alexa, what was my message
 ```
 
-
-
-## <a name="PortForwarding"> Port Forwarding</a>
-0. Since Amazon Echo cannot access devices on your local area network, 
-    set up port forwarding on your router for port 8060 to your Roku's IP.
-
-0. In an internet browser, go to http://whatismyip.com to get your public IP address, such as 72.21.61.71.
-1. Click "Check for Proxy".
 
 
 ## <a name="AppID"> Application ID</a>
