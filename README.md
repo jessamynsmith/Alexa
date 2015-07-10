@@ -17,7 +17,7 @@ In this sample spoken by a user:
     “Alexa, ask Greeter to say hello world.”
 
     * "Alexa" is the wake word.
-    * "ask" verb requests an "ability" aka skill.
+    * "ask" verb requests an "ability" aka <strong>skill</strong>.
     * "Greeter" is the intent (custom web service) to invoke.
     * "Say"
     * "hello world"
@@ -26,15 +26,41 @@ Borrowing a term from Android, <strong>intents</strong> is what a cloud-based se
 using case-insensitive alphabetical characters.
 
 An <strong>intent schema</strong> maps what services are processed based on users' spoken utterance text.
+## <a name="Slack"> Slots in 3rd Party API (Slack)</a>
+https://aws.amazon.com/blogs/compute/slack-dictation-an-amazon-echo-and-aws-lambda-demo/
+by Tim Wagner presents an example using AWS Lambda to post text Alexa converts to text in a Slack chat room.
 
-<strong>slots</strong> associated with an intent have a name and a type
+VIDEO: https://s3.amazonaws.com/awscomputeblogmedia/Lambda+Plus+Echo+Plus+Slack+Demo.mp4
+
+In this sample request body:
+
+```
+"request": {
+"type": "IntentRequest",
+"requestId": "request5678",
+"intent": {
+  "name": "MyColorIsIntent",
+  "slots": {
+    "Color": {
+      "name": "Color",
+      "value": "blue"
+    }
+  }
+}
+}
+}
+```
+
+Each <strong>slot</strong> consists of a name (color) and a value (blue).
+
+The <strong>slots</strong> associated intents have a name and a type
 https://developer.amazon.com/public/solutions/alexa/alexa-skills-kit/docs/alexa-skills-kit-interaction-model-reference
+
+
 
 https://github.com/MrEggsalad/Echo-Roku-Voice-Control
 Use Amazon Echo to control Roku 
 utilizing Roku's External Control Guide API http://sdkdocs.roku.com/display/sdkdoc/External+Control+Guide .
-
-https://aws.amazon.com/blogs/compute/slack-dictation-an-amazon-echo-and-aws-lambda-demo/
 
 ## <a name="PortForwarding"> Port Forwarding</a>
 0. Since Amazon Echo cannot access devices on your local area network, 
@@ -75,6 +101,13 @@ https://developer.amazon.com/appsandservices/solutions/alexa/alexa-skills-kit/do
 
 0. Copy the function ID such as "ARN - arn:aws:lambda:us-east-1:495111183449:function:Roku"
    Application ID amzn1.echo-sdk-ams.app.here
+
+    ```
+    /*
+    if (event.session.application.applicationId !== "amzn1.echo-sdk-ams.app.[unique-value-here]") {
+    */
+    ```
+
 0. Zip up
 0. Upload the zip file to Amazon.
 
@@ -92,7 +125,9 @@ send tweets and start programs from Amazon echo.
 with wakeup command "Alexa simon says"
 
 
-## <a name="Laravel"> Laravel compatibility</a>
+## <a name="Laravel"> Laravel PHP compatibility</a>
 https://github.com/develpr/alexa-app
+
+Laravel is a PHP framework.
 
 
