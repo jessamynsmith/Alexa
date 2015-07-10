@@ -4,6 +4,7 @@ Based on https://developer.amazon.com/appsandservices/solutions/alexa/alexa-skil
 
 Amazon Echo has a text-to-speech and speech-to-text chips.
 
+## <a name="PublicWebService"> Public Web Service</a>
 When a user asks Alexa a question or tells Alexa to do something,
 Echo converts speech to text and sends that text
 thru wi-fi then over the public internet to a web service in the Amazon cloud.
@@ -17,11 +18,11 @@ In this sample spoken by a user:
 
     * "Alexa" is the wake word.
     * "ask" verb requests an "ability" aka skill.
-    * "Greeter" is the invocation name.
+    * "Greeter" is the intent (custom web service) to invoke.
     * "Say"
     * "hello world"
 
-Borrowing a term from Android, <strong>intents</strong> are what a cloud-based service can handle,
+Borrowing a term from Android, <strong>intents</strong> is what a cloud-based service can handle,
 using case-insensitive alphabetical characters.
 
 An <strong>intent schema</strong> maps what services are processed based on users' spoken utterance text.
@@ -35,7 +36,7 @@ utilizing Roku's External Control Guide API http://sdkdocs.roku.com/display/sdkd
 
 https://aws.amazon.com/blogs/compute/slack-dictation-an-amazon-echo-and-aws-lambda-demo/
 
-
+## <a name="PortForwarding"> Port Forwarding</a>
 0. Since Amazon Echo cannot access devices on your local area network, 
     set up port forwarding on your router for port 8060 to your Roku's IP.
 
