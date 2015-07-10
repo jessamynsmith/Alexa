@@ -37,7 +37,7 @@ title="Amazon Echo User Flow from Getting Started Guide" ><img src="https://clou
 3) The web service returns a text response to Alexa software
     which converts text to speech the user hears.
 
-      "I was announced November 6, 2014"
+      "I was released November 6, 2014"
 
 4) Responses can also be displayed on the companion Amazon Echo mobile app
     as a <a href="#CardResponse"> card</a>.
@@ -47,9 +47,10 @@ QUESTION: Can Alexa "push" announcement of appointments in my Google calendar?
 
 ## <a name="Press"> Blogs about This</a>
 * http://www.geekwire.com/2014/amazon-echo-house-superior-streaming-speaker-smarts/
-  mentiones that Echo was 
-  Initially, it was offered by invitation only for $99 to Prime members.
-   It reports that Alexa stores a recording of your actual voice.
+  mentiones that Echo was "announced" November 6, 2014,
+  but did not begin shipments until December to beta customers offered an invitation to pay $99 as Prime members.
+
+  The author reports that <strong>Alexa stores a recording of your actual voice</strong>.
 
 * http://www.cnet.com/products/amazon-echo-review/ June 23, 2015
    says Alexa does a better job understanding what you're saying than today's iOS (Siri), Android (Google Now) and Windows (Cortana) mobile devices.
