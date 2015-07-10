@@ -1,80 +1,58 @@
 # Alexa in Amazon Echo
 
-Based on https://developer.amazon.com/appsandservices/solutions/alexa/alexa-skills-kit/getting-started-guide
+<a target="_blank" href="https://cloud.githubusercontent.com/assets/300046/8626603/bb0aed78-2702-11e5-97f9-f6c974223b80.png">
+<img align="right" src="https://cloud.githubusercontent.com/assets/300046/8626603/bb0aed78-2702-11e5-97f9-f6c974223b80.png" /></a>
 
-Amazon Echo has a text-to-speech and speech-to-text chips.
+Amazon Echo is the hardware. Alexa is the software that processes text and natural speech.
+This system is pre-programmed for English speech-to-text and text-to-speech.
 
-## <a name="PublicWebService"> Public Web Service</a>
-When a user asks Alexa a question or tells Alexa to do something,
-Echo converts speech to text and sends that text
-thru wi-fi then over the public internet to a web service in the Amazon cloud.
+The paper that comes with Echo says to use a mobile app to set it up.
+After you setup the wi-fi, you would go though what is at http://echo.amazon.com.
+<a target="_blank" href="http://www.amazon.com/gp/help/customer/display.html?nodeId=201601770">
+All about setup on this page</a>.
 
-The web service can be Amazon's Lambda event service or a custom service that
-sends back text which Alexa converts to speech to the user.
+To right sound volume, twist the top ring clockwise, the direction mechanical watches move.
 
-In this sample spoken by a user:
+<a target="_blank" href="https://developer.amazon.com/appsandservices/solutions/alexa/alexa-skills-kit/getting-started-guide"
+title="Amazon Echo User Flow from Getting Started Guide" ><img src="https://cloud.githubusercontent.com/assets/300046/8625357/72960afc-26fb-11e5-8a3b-f1320a09df13.png"
+/></a>
 
-    “Alexa, ask Greeter to say hello world.”
+1) When a user asks Alexa a question or tells Alexa to do something,
 
-    * "Alexa" is the wake word.
-    * "ask" verb requests an "ability" aka <strong>skill</strong>.
-    * "Greeter" is the intent (custom web service) to invoke.
-    * "Say"
-    * "hello world"
+2) Echo converts user speech to text and sends that text
+   thru wi-fi then over the public internet to your own web service somewhere or 
+   <a href="#Lambda">Amazon's Lamda web service</a> 
+   running in the Amazon Web Service (AWS) cloud infrastructure.
 
-Borrowing a term from Android, <strong>intents</strong> is what a cloud-based service can handle,
-using case-insensitive alphabetical characters.
+3) The web service returns a text response to Alexa software
+    which converts text to speech the user hears.
 
-An <strong>intent schema</strong> maps what services are processed based on users' spoken utterance text.
-## <a name="Slack"> Slots in 3rd Party API (Slack)</a>
-https://aws.amazon.com/blogs/compute/slack-dictation-an-amazon-echo-and-aws-lambda-demo/
-by Tim Wagner presents an example using AWS Lambda to post text Alexa converts to text in a Slack chat room.
+4) Responses can also be displayed on the companion Amazon Echo mobile app
+    as a <a href="#CardResponse"> card</a>.
 
-VIDEO: https://s3.amazonaws.com/awscomputeblogmedia/Lambda+Plus+Echo+Plus+Slack+Demo.mp4
+## <a name="Press"> Press about the Echo</a>
+* http://www.geekwire.com/2014/amazon-echo-house-superior-streaming-speaker-smarts/
+  mentiones that Echo was first announced November 6, 2014.
+  Initially, it was offered by invitation only for $99 to Prime members.
 
-In this sample request body:
+## <a name="Lambda"> Lambda Amazon Web Service</a>
+http://aws.amazon.com/lambda/
+is a back-end processing service that's more general than just processing Amazon Echo requests.
 
-```
-"request": {
-"type": "IntentRequest",
-"requestId": "request5678",
-"intent": {
-  "name": "MyColorIsIntent",
-  "slots": {
-    "Color": {
-      "name": "Color",
-      "value": "blue"
-    }
-  }
-}
-}
-}
-```
-
-Each <strong>slot</strong> consists of a name (color) and a value (blue).
-
-The <strong>slots</strong> associated intents have a name and a type
-https://developer.amazon.com/public/solutions/alexa/alexa-skills-kit/docs/alexa-skills-kit-interaction-model-reference
-
-
-
-https://github.com/MrEggsalad/Echo-Roku-Voice-Control
-Use Amazon Echo to control Roku 
-utilizing Roku's External Control Guide API http://sdkdocs.roku.com/display/sdkdoc/External+Control+Guide .
-
-## <a name="PortForwarding"> Port Forwarding</a>
-0. Since Amazon Echo cannot access devices on your local area network, 
-    set up port forwarding on your router for port 8060 to your Roku's IP.
-
-## <a name="CustomLambda"> New Lambda Service</a>
-Following:
+To develop a new Skill as a Lambda function, see
 https://developer.amazon.com/appsandservices/solutions/alexa/alexa-skills-kit/docs/developing-an-alexa-skill-as-a-lambda-function
 
-0. In an internet browser, go to http://whatismyip.com to get your public IP address, such as 72.21.61.71.
-1. Click "Check for Proxy".
-
 0. In the AWS Management Console, select the Lambda eventing service.
-1. Select the <strong>US East (N. Virginia)</strong> region, the only region supported by the Alexa Skills Kit.
+1. Select the <strong>US East (N. Virginia)</strong> region.
+
+    Initially the only region supported by the Alexa Skills Kit was "US East (N. Virginia)".
+
+    <a target="_blank" href="http://aws.amazon.com/about-aws/whats-new/2015/06/aws-lambda-available-in-asia-pacific-tokyo/">
+    On Jun 29, 2015, availability of AWS Lambda was announced</a>
+    forUS East (N. Virginia), US West (Oregon), EU (Ireland), and Asia Pacific (Tokyo) regions.
+    
+    Look for #awslambda in Twitter.
+
 1. Click <strong>Get Started Now</strong>. Otherwise, click Create a Lambda Function.
 0. Enter a Blueprint Name and Description for the function: <strong>Roku</strong>
 0. Click <strong>alexa-skills-kit-color-expert</strong>
@@ -99,6 +77,119 @@ https://developer.amazon.com/appsandservices/solutions/alexa/alexa-skills-kit/do
 }
 ```
 
+
+## <a name="Slack"> Slots in 3rd Party API (Slack)</a>
+https://aws.amazon.com/blogs/compute/slack-dictation-an-amazon-echo-and-aws-lambda-demo/
+by Tim Wagner (https://twitter.com/timallenwagner)
+presents an example using AWS Lambda to post text Alexa converts to text in a Slack chat room.
+
+Follow https://twitter.com/@lambdatips.
+
+VIDEO: https://s3.amazonaws.com/awscomputeblogmedia/Lambda+Plus+Echo+Plus+Slack+Demo.mp4
+shows the voice commands and code: 
+
+```
+Alexa, tell Slack to send it's time for lunch
+```
+
+If we capture the unencrypted request body, the relevant part is: 
+
+```
+  "slots": {
+    "Message": {
+      "name": "Message",
+      "value": "it's time for lunch"
+```
+
+<strong>"slots"</strong> is keyword that must be specified.
+"Message" appears twice: once as the identifier and another as ???.
+
+There is a "outputSpeech" 
+
+```
+{
+  "version": "1.0",
+  "sessionAttributes": {},
+  "response": {
+    "outputSpeech": {
+      "type": "PlainText",
+      "text": "Welcome to the Alexa Skills Kit sample, Please tell me your favorite color by saying, my favorite color is red"
+    },
+```
+
+## <a name="CardResponse"> Card Response</a>
+What is displayed in the Amazon Echo mobile app is defined in a "card":
+
+```
+"card": {
+      "type": "Simple",
+      "title": "SessionSpeechlet - Welcome",
+      "content": "SessionSpeechlet - Welcome to the Alexa Skills Kit sample, Please tell me your favorite color by saying, my favorite color is red"
+    },
+```
+
+A <strong>reprompt</strong> should be defined for when the user does not respond as expected.
+
+```
+    "reprompt": {
+      "outputSpeech": {
+        "type": "PlainText",
+        "text": "Please tell me your favorite color by saying, my favorite color is red"
+      }
+    },
+    "shouldEndSession": false
+  }
+}
+```
+
+## <a name="DeveloperConsole"> Developer Console</a>
+https://developer.amazon.com/home.html
+
+
+In this sample spoken by a user:
+
+    “Alexa, ask Greeter to say hello world.”
+
+    * "Alexa" is the wake word.
+    * "ask" verb requests an "ability" aka <strong>skill</strong>.
+    * "Greeter" is the intent (custom web service) to invoke.
+    * "Say"
+    * "hello world"
+
+## <a name="Intents"> Intents</a>
+Borrowing a term from Android, <strong>intents</strong> is what a cloud-based service can handle,
+using case-insensitive alphabetical characters.
+
+An <strong>intent schema</strong> maps what services are processed based on users' spoken utterance text.
+
+
+The <strong>slots</strong> associated intents have a name and a type
+https://developer.amazon.com/public/solutions/alexa/alexa-skills-kit/docs/alexa-skills-kit-interaction-model-reference
+
+Slack receives the request in its endpoint at `https://hooks.slack.com/services/'.
+
+https://github.com/MrEggsalad/Echo-Roku-Voice-Control
+Use Amazon Echo to control Roku 
+utilizing Roku's External Control Guide API http://sdkdocs.roku.com/display/sdkdoc/External+Control+Guide .
+
+
+and to confirm: 
+
+```
+Alexa, what was my message
+```
+
+
+
+## <a name="PortForwarding"> Port Forwarding</a>
+0. Since Amazon Echo cannot access devices on your local area network, 
+    set up port forwarding on your router for port 8060 to your Roku's IP.
+
+0. In an internet browser, go to http://whatismyip.com to get your public IP address, such as 72.21.61.71.
+1. Click "Check for Proxy".
+
+
+## <a name="AppID"> Application ID</a>
 0. Copy the function ID such as "ARN - arn:aws:lambda:us-east-1:495111183449:function:Roku"
    Application ID amzn1.echo-sdk-ams.app.here
 
