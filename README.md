@@ -339,7 +339,7 @@ However, this set of sample assets was written to run on a Java, or more specifi
 So each folder in samples contains a Speechlet.java file.
 
 Also in the <strong>samples</strong> folder 
-is a Launcher.java file built by ant using the <strong>build.xml</strong> file included:
+is a <strong>build.xml</strong> file for the ant build tool to use:
 
 ```
 <!-- Ant build script for compiling and running the Echo SDK samples. -->
@@ -370,9 +370,18 @@ is a Launcher.java file built by ant using the <strong>build.xml</strong> file i
 </project>
 ```
 
-So it has a "third-party" folder containing jar files in folder j2ee_servlet, log4j, Jetty, 
-<a target="_blank" href="http://jakarta.apache.org/">Jakarta</a> (which has been retired since 2011 by Apache
-in favor of http://jmeter.apache.org/), and Jackson (for JSON processing).
+The <strong>Launcher.java</strong> file in turn references libraries in the
+top-level "third-party" folder containing jar files in folder j2ee_servlet, Jetty.
+
+The <a target="_blank" href="http://jakarta.apache.org/">Jakarta</a> folders were retired since 2011 by Apache
+in favor of http://jmeter.apache.org/), and Jackson (for JSON processing) are used for testing.
+
+<a target="_blank" href="http://www.slf4j.org/">Slf4j</a> 
+is the Simple Logging Facade for Java, which serves as a facade to the Slf4j_log4j and log4j library.
+
+The <a target="_blank" href="http://www.joda.org/joda-time/">Joda-time</strong> library 
+provides a quality replacement for the poor Java date and time classes in standard Java.
+From Java SE 8 onwards, users are asked to migrate to java.time (JSR-310).
 
 In the lib folder is the <strong>alexa-skills-kit-1.0.120.0.jar</strong>
 file which compresses a MANIFEST file describing code in folder com.amazon.speech.
