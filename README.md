@@ -291,7 +291,7 @@ alt="roku-108x108.png" />
 10) Copy from the Roku Github repo file <strong>roku-108x108.png</strong> and paste into the 
     Size 108x108 pixels, in PNG or JPG format. This is displayed in the Echo app. 
 
-11) Click <strong>Image</strong> and select
+11) Click <strong>Image</strong> and select the path and file.
 
 12) For Category, select Home Automation.
 
@@ -336,6 +336,9 @@ WhatsMyColorIntent say my favorite color
 WhatsMyColorIntent tell me my favorite color
 WhatsMyColorIntent tell me what my favorite color is
 ```
+
+The intents specified (MyColorIntents and WhatsMyColorIntent) are defined in file
+      <strong>IntentSchema.json</strong>
 
 These are the same as for the Node.js example.
 
@@ -395,7 +398,7 @@ file which compresses a MANIFEST file describing code in folder com.amazon.speec
 ## <a name="AlexaLambdaSamleKit">AlexaLambdaExamples.zip</a>
 While signed into the Developer Console, download
 https://developer.amazon.com/edw/res/download/AlexaLambdaExamples.zip
-Unzip it. There are several examples:
+Unzip it. There are several examples. In each sample folder are a src folder and speechAssets folder.
 
 * helloWorld
 * HistoryBuff : a skill that gives historical information that happened on a user provided day.
@@ -404,14 +407,22 @@ Unzip it. There are several examples:
 * ScoreKeeper : a skill that can keep score of a game.
 * SpaceGeek : a simple skill that responds to the user with a space fact.
 * TidePooler : a skill that looks up tide information for various cities.
-* WiseGuy : a skill that tells knock knock jokes, a multi-turn dialog using a JavaScript array in index.js.
+* WiseGuy : a skill that tells knock knock jokes, a multi-turn dialog using a JavaScript array in index.js,
+      with these custom intents in file IntentSchema.json:
 
-The AlexaSkill.js file contains prototype of requestHandlers:
+      * TellMeAJokeIntent
+      * WhosThereIntent
+      * SetupNameWhoIntent
+      * HelpIntent
+
+The <strong>AlexaSkill.js</strong> file contains prototype of requestHandlers:
+
       * LaunchRequest
       * IntentRequest
       * SessionEndedRequest
       
 IntentHandlers:
+
       * onSessionStarted
       * onLaunch
       * onIntent
