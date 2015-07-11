@@ -244,6 +244,9 @@ Let's use the contents of these files to setup our own Roku voice controller.
 
 5) Specify the skill name (Roku) and invocation name, and version 
 
+    See Invocation Name Guidelines at
+    https://developer.amazon.com/public/solutions/alexa/alexa-skills-kit/docs/choosing-the-invocation-name-for-an-alexa-skill
+    
 6) Click in the <strong>Endpoint*</strong> box and press Ctrl_V to paste the Lambda ARN, such as:
 
       amzn1.echo-sdk-ams.app.b1bf9000-1111-2222-3333-30b6bacc90fd
@@ -273,6 +276,8 @@ Let's use the contents of these files to setup our own Roku voice controller.
   ]
 }
 ```
+
+      There is only one slot - a LITERAL named Control to handle a finite set of known values.
 
 9) Copy the contents of the Roku Github repo file <strong>SampleUtterances.txt</strong> and paste into the 
  Sample Utterances box.
@@ -390,7 +395,28 @@ file which compresses a MANIFEST file describing code in folder com.amazon.speec
 ## <a name="AlexaLambdaSamleKit">AlexaLambdaExamples.zip</a>
 While signed into the Developer Console, download
 https://developer.amazon.com/edw/res/download/AlexaLambdaExamples.zip
+Unzip it. There are several examples:
 
+* helloWorld
+* HistoryBuff : a skill that gives historical information that happened on a user provided day.
+* MinecraftHelper : a simple skill that responds to the user's recipe queries with formulas.
+* Savvy Consumer : a skill that looks up a category on Amazon and returns the best selling products.
+* ScoreKeeper : a skill that can keep score of a game.
+* SpaceGeek : a simple skill that responds to the user with a space fact.
+* TidePooler : a skill that looks up tide information for various cities.
+* WiseGuy : a skill that tells knock knock jokes, a multi-turn dialog using a JavaScript array in index.js.
+
+The AlexaSkill.js file contains prototype of requestHandlers:
+      * LaunchRequest
+      * IntentRequest
+      * SessionEndedRequest
+      
+IntentHandlers:
+      * onSessionStarted
+      * onLaunch
+      * onIntent
+      
+      
 
 ## <a name="Intents"> Intents</a>
 Borrowing a term from Android, <strong>intents</strong> is what a cloud-based service can handle,
