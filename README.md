@@ -60,6 +60,26 @@ QUESTION: Can Alexa "push" announcement of appointments in my Google calendar?
 * <a target="_blank" href="https://forums.developer.amazon.com/forums/category.jspa?categoryID=48">
   The Alexa section of Amazon's Developer Forum</a>
 
+
+## <a name="ExternalIntents"> External Intents</a>
+Amazon provides some interfaces:
+
+   * Phillips
+   * Wink
+ 
+3rd-party interfaces:
+
+      * Roku
+      * Tweet to send
+
+            * Alexa, ask Twitter to say "whatever".
+
+      * Facebook blog to create
+
+            * Alexa, ask Facebook to say "whatever".
+
+      * Wordpress blog entry to create
+
 ## <a name="Lambda"> Lambda Amazon Web Service</a>
 http://aws.amazon.com/lambda/
 is a back-end processing service that's more general than just processing Amazon Echo requests.
