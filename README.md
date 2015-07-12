@@ -19,28 +19,38 @@ To right sound volume, twist the top ring clockwise, the direction mechanical wa
 title="Amazon Echo User Flow from Getting Started Guide" ><img src="https://cloud.githubusercontent.com/assets/300046/8625357/72960afc-26fb-11e5-8a3b-f1320a09df13.png"
 /></a>
 
-1) When a user asks Alexa a question or tells Alexa to do something, such as
+1) Connect Alexa to an Amazon account that has Prime membership because
+   that is needed to play music.
+  
+2) Alexa knows where you live from you Amazon.com account address.
+   Change the ZIP code in the Echo app.
+
+3) Connect Alexa to your Google Calendar and ToDo list.
+   
+4) Ask Alexa a question or tells Alexa to do something, such as:
 
       "Alexa, how old are you?"
 
-2) Echo converts user speech to text and sends that text
-   thru wi-fi then over the public internet to your own web service somewhere or as a "push event source" to
-   <a href="#Lambda">Amazon's Lamda web service</a> 
-   running in the Amazon Web Service (AWS) cloud infrastructure.
+   Echo converts user speech to text and sends that text
+   thru wi-fi then over the public internet to a web service.
    
-   By default, content is accessed from Bing,  Wikipedia, and other sources.
-   
-   You can connect Alexa to your Google Calendar and ToDo list.
-   
-   Alexa knows where you live from you Amazon.com account address (you can change the ZIP code in the Echo app). 
-
-3) The web service returns a text response to Alexa software
+   The web service returns a text response to Alexa software
     which converts text to speech the user hears.
 
       "I was released November 6, 2014"
 
-4) Responses can also be displayed on the companion Amazon Echo mobile app
+   Responses can also be displayed on the companion Amazon Echo mobile app
     as a <a href="#CardResponse"> card</a>.
+
+   By default, content is accessed from Bing,  Wikipedia, and other sources.
+   
+   But you can create your own web service somewhere or as a "push event source" to
+   <a href="#Lambda">Amazon's Lamda web service</a> 
+   running in the Amazon Web Service (AWS) cloud infrastructure.
+   
+   “Developing an Alexa Skill as a Web Service”       (https://developer.amazon.com/public/solutions/alexa/alexa-skillskit/docs/developing-an-alexa-skill-as-a-web-service)
+      notes that the web service must use HTTPS which requires an Amazon trusted certificate
+      and validate the requests are coming from Amazon. 
 
 QUESTION: Can Alexa "push" announcement of appointments in my Google calendar?
 
