@@ -508,3 +508,7 @@ Laravel is a PHP framework.
 
 ## <a name="Node"> Node.JS example</a>
 http://docs.aws.amazon.com/lambda/latest/dg/getting-started.html
+
+
+## <a name="SmartThings"> SmartThings</a>
+https://community.smartthings.com/t/playing-around-with-amazon-echo-technical-interface-discussion/14887/314
