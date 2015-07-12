@@ -1,5 +1,9 @@
 # Alexa in Amazon Echo
 
+This page provides to experienced programmers a deep technical introduction to 
+Amazon's Echo hardware and associated
+Alexa software.
+
 <a target="_blank" href="https://cloud.githubusercontent.com/assets/300046/8626603/bb0aed78-2702-11e5-97f9-f6c974223b80.png">
 <img align="right" src="https://cloud.githubusercontent.com/assets/300046/8626603/bb0aed78-2702-11e5-97f9-f6c974223b80.png" /></a>
 
@@ -27,7 +31,7 @@ title="Amazon Echo User Flow from Getting Started Guide" ><img src="https://clou
 
 3) Connect Alexa to your Google Calendar and ToDo list.
    
-4) Ask Alexa a question or tells Alexa to do something, such as:
+4) Ask Alexa a natural-language question such as:
 
       "Alexa, how old are you?"
 
@@ -40,11 +44,16 @@ title="Amazon Echo User Flow from Getting Started Guide" ><img src="https://clou
       "I was released November 6, 2014"
 
    Responses can also be displayed on the companion Amazon Echo mobile app
-    as a <a href="#CardResponse"> card</a>.
+    as a <strong>card</strong>. 
 
-   By default, content is accessed from Bing,  Wikipedia, and other sources.
+   QUESTION: Do requests to Bing track back to the user making the request such that the subject follows the user
+   in ads?
    
-   But you can create your own web service somewhere or as a "push event source" to
+5) Tell Alexa to invoke a specific <strong> intent</strong> such as:
+
+      "Alexa, tell ... to ..."
+   
+   You can create your own web service somewhere or as a "push event source" to
    <a href="#Lambda">Amazon's Lamda web service</a> 
    running in the Amazon Web Service (AWS) cloud infrastructure.
    
@@ -53,6 +62,12 @@ title="Amazon Echo User Flow from Getting Started Guide" ><img src="https://clou
       and validate the requests are coming from Amazon. 
 
 QUESTION: Can Alexa "push" announcement of appointments in my Google calendar?
+
+6) Tell Alexa to invoke a specific <strong> intent</strong> such as:
+
+      "Alexa, tell ... to ..."
+   
+   The response to launch commands like this is a <strong>welcome message</strong>.
 
 
 ## <a name="Press"> Blogs about This</a>
@@ -315,6 +330,8 @@ Let's use the contents of these files to setup our own Roku voice controller.
  For better results, provide as many samples as you can.
  For more information, see Defining the Voice Interface for an Alexa skill at
   https://developer.amazon.com/appsandservices/solutions/alexa/alexa-skills-kit/docs/defining-the-voice-interface
+
+   The Developer's Console only allows up to 200,000 characters in the utterance field.
 
 <img align="right" src="https://cloud.githubusercontent.com/assets/300046/8628873/b0840f36-2713-11e5-8a7e-8042fbe82275.png"
 alt="roku-108x108.png" />
