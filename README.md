@@ -7,6 +7,7 @@ Alexa software.
 <a target="_blank" href="https://cloud.githubusercontent.com/assets/300046/8626603/bb0aed78-2702-11e5-97f9-f6c974223b80.png">
 <img align="right" src="https://cloud.githubusercontent.com/assets/300046/8626603/bb0aed78-2702-11e5-97f9-f6c974223b80.png" /></a>
 
+
 ## <a name="Unboxing"> Unboxing and Setup</a>
 Amazon Echo is the 9.25-inch-tall (23.5 cm) canister hardware with 2 speakers and 7 microphones. 
 
@@ -68,6 +69,10 @@ QUESTION: Can Alexa "push" announcement of appointments in my Google calendar?
       "Alexa, tell ... to ..."
    
    The response to launch commands like this is a <strong>welcome message</strong>.
+
+
+Even though Alexa is able to recognize much, it is rather primative compared to what Google is working on:
+http://www.aiyellowpage.com/content/google-you-can-talk-about-life-with-robots/
 
 
 ## <a name="Press"> Blogs about This</a>
