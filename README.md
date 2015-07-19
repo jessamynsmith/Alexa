@@ -5,13 +5,14 @@ Amazon's Echo hardware and associated
 Alexa software.
 
 
+<a target="_blank" href="https://cloud.githubusercontent.com/assets/300046/8626603/bb0aed78-2702-11e5-97f9-f6c974223b80.png">
+<img align="right" src="https://cloud.githubusercontent.com/assets/300046/8626603/bb0aed78-2702-11e5-97f9-f6c974223b80.png" /></a>
 ## <a name="Unboxing"> Unboxing and Setup</a>
+
 Amazon Echo is the 9.25-inch-tall (23.5 cm) canister hardware with 2 speakers and 7 microphones. 
 
 Alexa is the "Voice Assistant" software that is pre-programmed for English speech-to-text and text-to-speech.
 
-<a target="_blank" href="https://cloud.githubusercontent.com/assets/300046/8626603/bb0aed78-2702-11e5-97f9-f6c974223b80.png">
-<img align="right" src="https://cloud.githubusercontent.com/assets/300046/8626603/bb0aed78-2702-11e5-97f9-f6c974223b80.png" /></a>
 The paper that comes with Echo says to use a mobile app to set it up.
 But there is also  http://echo.amazon.com for the desktop browsers, according to 
 <a target="_blank" href="http://www.amazon.com/gp/help/customer/display.html?nodeId=201601770">
