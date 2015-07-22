@@ -85,6 +85,8 @@ http://www.aiyellowpage.com/content/google-you-can-talk-about-life-with-robots/
 * http://www.cnet.com/products/amazon-echo-review/ June 23, 2015
    says Alexa does a better job understanding what you're saying than today's iOS (Siri), Android (Google Now) and Windows (Cortana) mobile devices.
 
+* http://www.wsj.com/articles/amazon-echo-review-talking-helper-alexa-is-no-match-for-siri-1422997829
+
 
 ## <a name="Social"> Social</a>
 * <a target="_blank" href="https://forums.developer.amazon.com/forums/category.jspa?categoryID=48">
