@@ -198,7 +198,7 @@ Compress into file <strong>Archive.zip</strong> containing these files:
    a new tab appears. Leave the supplied IAM Role: Create a new IAM Role and Role Name: lambda_basic_execution.
   Click the blue <strong>Allow</strong> button at the lower-right of the screen.
 
-0. Under the Advanced settings section, leave default Memory (MB) 128 and Timeout 3.
+0. Under the Advanced settings section, leave default Memory (MB) <strong>128</strong> and Timeout <strong>3</strong>.
 0. Click the blue <strong>Next</strong> button.
 0. Click the blue <strong>Create function</strong> button.
 1. Highlight the ARN at the upper-right corner of the screen, such as:
@@ -257,8 +257,9 @@ Compress into file <strong>Archive.zip</strong> containing these files:
    "value": "Name"
   ```
 
-
-2. Click <strong>Test</strong>.
+5. Leave "session1234" as-is.
+6. Leave "request5678" as-is.
+7. Click <strong>Test</strong>.
 
 
 ## <a name="Submit"> Submit for Certification</a>
