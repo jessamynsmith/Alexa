@@ -244,7 +244,8 @@ Let's use the contents of these files to setup our own Roku voice controller.
       Or see http://photobridge.roku.com/downloads/pb_support_downloads/StaticIPAddress_HD1000.pdf
 
       NOTE: The Roku OS is only able to get an IP via DHCP 
-      
+
+
 ### <a name="DeveloperConsole"> Developer Console</a>
 1) Sign directly into the Alexa Developer Console at <a target="_blank" href=""https://developer.amazon.com/home.html">
    https://developer.amazon.com/home.html</a> rather than the 
