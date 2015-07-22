@@ -2,7 +2,7 @@ This page provies a baby-step by step tutorial on how to setup to
 
 ## <a name="Description"> Description</a>
 
-  Call a phone by saying to Amazon Echo running a skill AWS Lambda running node.
+  Call a phone by saying to Amazon Echo referencing a skill AWS Lambda running Node.js
 
 ## <a name="ExamplePhrases"> Example Phrases</a>
 
@@ -64,10 +64,16 @@ arn:aws:lambda:us-east-1:000000000000:function:myFunction
 CallIntent call {Name|Control}
  ```
 
-4. Replace "Name" with your name.
+4. Replace "Name" with your name. For example:
+
+ ```
+CallIntent call {Wilson|Control}
+ ```
+
 0. Click Next.
 1. Click Enable so skill is enabled for testing on this account.
 0. Click Next.
+
 
 1. <a name="CreatePicture"> Create a picture</a>
 
@@ -185,5 +191,7 @@ Refer to https://developer.amazon.com/appsandservices/solutions/alexa/alexa-skil
 }
  ```
 
-6. Save everything and tell Alexa to do call you and wait for your phone to ring.
+6. Save everything 
+7. Say <a href="#ExamplePhrases"> Example Phrases</a> to tell Alexa to call the phone.
+8. Wait for your phone to ring.
 
