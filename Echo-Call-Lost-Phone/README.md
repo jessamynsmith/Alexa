@@ -265,6 +265,21 @@ Compress into file <strong>Archive.zip</strong> containing these files:
 
 
 ## <a name="Submit"> Submit for Certification</a>
+Return to the Amazon Developer page at https://developer.amazon.com/edw/home.html
+
+1. Replace the placeholder with the ARN copied from the previous step: 
+
+  ``` 
+  arn:aws:lambda:us-east-1:000000000000:function:myFunction
+  ```
+
+2. If the skill had already been submitted, wait for it to be editable again.
+
+3. Otherwise, click <strong>Submit for Certification</strong>.
+4. Click Yes to confirm.
+
+
+## <a name="Test"> Test</a>
 On the console.aws.amazon.com web page:
 
 0. Click the blue <strong>Test</strong> button.
@@ -297,20 +312,6 @@ On the console.aws.amazon.com web page:
 
 0. Adjust the Resources configured if need be.
 
-
-## <a name="Submit"> Submit for Certification</a>
-Return to the Amazon Developer page at https://developer.amazon.com/edw/home.html
-
-1. Replace the placeholder with the ARN copied from the previous step: 
-
-  ``` 
-  arn:aws:lambda:us-east-1:000000000000:function:myFunction
-  ```
-
-2. If the skill had already been submitted, wait for it to be editable again.
-
-3. Otherwise, click <strong>Submit for Certification</strong>.
-4. Click Yes to confirm.
 
 
 ## <a name="UseIt"> Use It</a>
