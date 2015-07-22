@@ -16,10 +16,8 @@ Refer to https://developer.amazon.com/appsandservices/solutions/alexa/alexa-skil
 Here are the steps to make this work:
 
 0. <a href="#NewAppId"> Create an Alexa Skill to get the Application ID</a>
-
 	0. <a name="SampleUtterances"> Specify Sample Utterances</a>
 	0. <a name="CreatePicture"> Create a picture</a>
-
 0. <a href="#Repo"> Establish and Edit Files</a>
 0. <a href="#Index.JS"> Edit Index.js File</a>
 0. <a href="#NewZIP"> Package .ZIP</a>
