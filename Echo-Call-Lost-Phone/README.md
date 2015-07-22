@@ -78,8 +78,9 @@ The code was inspired by Alan Cone's brilliant work shared at:
 
 1. <a name="CreatePicture"> Create a picture</a>
   <a target="_blank" href="https://cloud.githubusercontent.com/assets/300046/8825227/a7a9b624-303a-11e5-854d-a0e22c897cda.jpg">
-  <img align="right" src="https://cloud.githubusercontent.com/assets/300046/8825227/a7a9b624-303a-11e5-854d-a0e22c897cda.jpg" />
-   Find a graphic on http://images.google.com, then edit it to a 108x108 pixel png file. 
+  <img align="right" src="https://cloud.githubusercontent.com/assets/300046/8825227/a7a9b624-303a-11e5-854d-a0e22c897cda.jpg" /></a>
+   Find a restriction-free graphic on <a target="_blank" href="http://images.google.com">
+   http://images.google.com</a>, then edit it to a 108x108 pixel png file. 
 
 0. Click the icon to download the image.
 1. For Category, select Home-Automation.
