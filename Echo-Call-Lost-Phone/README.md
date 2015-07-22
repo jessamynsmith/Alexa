@@ -261,7 +261,41 @@ Compress into file <strong>Archive.zip</strong> containing these files:
 
 5. Leave "session1234" as-is.
 6. Leave "request5678" as-is.
-7. Click <strong>Test</strong>.
+7. Click <strong>Submit</strong>.
+
+
+## <a name="Submit"> Submit for Certification</a>
+On the console.aws.amazon.com web page:
+
+0. Click the blue <strong>Test</strong> button.
+
+0. Your phone should now ring.
+1. If you answer, an automated voice says "Hello there ...".
+
+0. Under the Monitoring tab, it should say "Execution result: succeeded" with this JSON:
+
+ ```
+ {
+  "version": "1.0",
+  "response": {
+    "outputSpeech": {
+      "type": "PlainText",
+      "text": ""
+    },
+    "shouldEndSession": true
+  },
+  "sessionAttributes": {}
+}
+ ```
+
+0. At the bottom of the page, note the <strong>Billed duration</strong> (1000 ms for me),
+   where 1000 ms (millisecond) = 1 second.
+
+0. At the bottom of the page, compare the 
+   <strong>Resources configured</strong> (128 MB) versus 
+   <strong>Max memory used</strong> (27 MB).
+
+0. Adjust the Resources configured if need be.
 
 
 ## <a name="Submit"> Submit for Certification</a>
