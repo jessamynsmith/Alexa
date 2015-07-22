@@ -303,6 +303,12 @@ On the console.aws.amazon.com web page:
 }
  ```
 
+0. Wait for a few minutes for the <strong>Invocation count</strong> and other charts to update under <strong>CloudWatch metris at a glance</strong>.
+1. Click on the refresh icon.
+
+2. Click somewhere in the Invocation duration graph, 
+   then mouse over the peak of the blue Maximum, green Average, and orange Minimum lines.
+
 0. At the bottom of the page, note the <strong>Billed duration</strong> (1000 ms for me),
    where 1000 ms (millisecond) = 1 second.
 
@@ -313,8 +319,22 @@ On the console.aws.amazon.com web page:
 0. Adjust the Resources configured if need be.
 
 
+## <a name="ManageLogs"> Manage Logs</a>
+On the console.aws.amazon.com web page:
+
+0. Click the <strong>Monitoring</strong> tab.
+1. Click View logs in CloudWatch. This opens a new browser tab.
+
+  Log Groups > should say <strong>aws/Lambda/Phone</strong> which was automatically created when the service was created.
+
+2. Click the checkbox to the right of <strong>Log Streams</strong>.
+3. Click <strong>Delete Log Stream</strong>.
+
 
 ## <a name="UseIt"> Use It</a>
-4. Say <a href="#ExamplePhrases"> Example Phrases</a> to tell Alexa to call the phone.
-5. Wait for your phone to ring.
+0. Say <a href="#ExamplePhrases"> Example Phrases</a> to tell Alexa to call the phone.
+
+  If Alexa responds "I didn't hear a person to call", give up ???
+
+0. Wait for your phone to ring.
 
