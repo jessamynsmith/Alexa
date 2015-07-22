@@ -31,7 +31,7 @@ Here are the steps to make this work:
 0. <a href="#NewLambda"> Create New Lambda Amazon Web Service</a>
 0. <a href="#SampleEventTest"> Define Sample Event Template</a>
 0. <a href="#Submit"> Submit for Certification</a>
-0. <a href="#Test"> Test Web Service</a>
+0. <a href="#TestWS"> Test Web Service</a>
 0. <a href="#UseIt"> Talk to Alexa to Really Use It</a>
 0. <a href="#ManageMemory"> Manage Memory</a>
 0. <a href="#ManageLogs"> Manage Log History</a>
