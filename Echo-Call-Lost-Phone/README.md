@@ -61,15 +61,15 @@ The code was inspired by Alan Cone's brilliant work shared at:
  ```
 0. <a name="SampleUtterances"> Specify Sample Utterances</a>, replacing "Name" with your name. For example, from:
 
- ```
-CallIntent call {Name|Control}
- ```
+  ```
+  CallIntent call {Name|Control}
+  ```
 
 to:
 
- ```
-CallIntent call {Wilson|Control}
- ```
+  ```
+  CallIntent call {Wilson|Control}
+  ```
 
 0. Click Next.
 1. Click Enable so skill is enabled for testing on this account.
