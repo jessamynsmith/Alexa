@@ -352,7 +352,7 @@ On the console.aws.amazon.com web page:
 On the console.aws.amazon.com web page:
 
 0. Wait for a few minutes for the <strong>Invocation count</strong> and other charts to update under <strong>CloudWatch metris at a glance</strong>.
-1. Click on the refresh icon.
+1. Click on the refresh ("spinner") icon.
 
 2. Click somewhere in the Invocation duration graph, 
    then mouse over the peak of the blue Maximum, green Average, and orange Minimum lines.
