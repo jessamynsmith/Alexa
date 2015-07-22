@@ -303,6 +303,17 @@ On the console.aws.amazon.com web page:
 }
  ```
 
+## <a name="UseIt"> Talk to Alexa to Really Use It</a>
+0. Say to Alexa <a href="#ExamplePhrases"> Example Phrases</a> to tell Alexa to call the phone.
+
+  If Alexa responds "I didn't hear a person to call", give up ???
+
+0. Wait for your phone to ring.
+
+
+## <a name="ManageMemory"> Manage Memory</a>
+On the console.aws.amazon.com web page:
+
 0. Wait for a few minutes for the <strong>Invocation count</strong> and other charts to update under <strong>CloudWatch metris at a glance</strong>.
 1. Click on the refresh icon.
 
@@ -319,7 +330,7 @@ On the console.aws.amazon.com web page:
 0. Adjust the Resources configured if need be.
 
 
-## <a name="ManageLogs"> Manage Logs</a>
+## <a name="ManageLogs"> Manage Log History</a>
 On the console.aws.amazon.com web page:
 
 0. Click the <strong>Monitoring</strong> tab.
@@ -329,12 +340,4 @@ On the console.aws.amazon.com web page:
 
 2. Click the checkbox to the right of <strong>Log Streams</strong>.
 3. Click <strong>Delete Log Stream</strong>.
-
-
-## <a name="UseIt"> Use It</a>
-0. Say <a href="#ExamplePhrases"> Example Phrases</a> to tell Alexa to call the phone.
-
-  If Alexa responds "I didn't hear a person to call", give up ???
-
-0. Wait for your phone to ring.
 
