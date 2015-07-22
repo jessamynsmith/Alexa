@@ -251,6 +251,8 @@ Compress into file <strong>Archive.zip</strong> containing these files:
   "applicationId": "amzn1.echo-sdk-ams.app.[unique-value-here]"
   ```
 
+  After pasting, remove leading and trailing blank spaces inside the double-quote characters.
+
 4. Replace "Name" with the name associated with a phone ("Wilson" in my case):
 
   ```
