@@ -1,4 +1,8 @@
-This page provies a baby-step by step tutorial on how to setup to call your phone by saying to Amazon Echo
+This page provies a baby-step by step tutorial on how to setup to 
+
+## <a name="Description"> Description</a>
+
+  Call a phone by saying to Amazon Echo running a skill AWS Lambda running node.
 
 ## <a name="ExamplePhrases"> Example Phrases</a>
 
@@ -28,9 +32,12 @@ arn:aws:lambda:us-east-1:000000000000:function:myFunction
  ```
 
 0. Click Save.
-0. Copy the <strong>Application ID</strong> at the top of the screen:
+0. Highlight the <strong>Application ID</strong> at the top of the screen and 
+   press Ctrl+C to copy the string to the invisible Clipboard.
 
    amzn1.echo-sdk-ams.app.399228c6-3452-461b-92ef-7af1ff8a4111
+
+  This will be pasted into other files.
 
 0. Click Next.
 
@@ -57,6 +64,7 @@ arn:aws:lambda:us-east-1:000000000000:function:myFunction
 CallIntent call {Name|Control}
  ```
 
+4. Replace "Name" with your name.
 0. Click Next.
 1. Click Enable so skill is enabled for testing on this account.
 0. Click Next.
@@ -177,7 +185,5 @@ Refer to https://developer.amazon.com/appsandservices/solutions/alexa/alexa-skil
 }
  ```
 
-4. In SampleUtterances.txt replace "Name" with your name.
-5. Set up new Alexa Skill on https://developer.amazon.com/edw/home.html#/ and utilize intentSchema.json and SampleUtterances.txt to help let Alexa know what she should be listening for.
 6. Save everything and tell Alexa to do call you and wait for your phone to ring.
 
