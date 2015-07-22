@@ -210,6 +210,55 @@ Compress into file <strong>Archive.zip</strong> containing these files:
 0. Press Ctrl+C to copy it to the invisible Clipboard.
 
 
+## <a name="SampleEventTest"> Sample Event Test</a>
+0. In place of the default provided:
+
+ ```
+ {
+  "key3": "value3",
+  "key2": "value2",
+  "key1": "value1"
+}
+ ```
+
+   Paste the following:
+
+ ```
+ {
+  "version": "1.0",
+  "session": {
+    "new": false,
+    "application": {
+      "applicationId": "amzn1.echo-sdk-ams.app.[unique-value-here]"
+    },
+    "sessionId": "session1234",
+    "attributes": {},
+    "user": {
+      "userId": null
+    }
+  },
+  "request": {
+    "type": "IntentRequest",
+    "requestId": "request5678",
+    "intent": {
+      "name": "CallIntent",
+      "slots": {
+        "Control": {
+          "name": "Control",
+          "value": "Name"
+        }
+      }
+    }
+  }
+}
+  ```
+
+0. Change the <strong>applicationId</strong> with the APP_ID created earlier in this tutorial.
+
+1. Change the Name to the name of the phone ("Wilson" in my case). 
+2. Click <strong>Test</strong>.
+
+
 ## <a name="Submit"> Submit for Certification</a>
 Return to the Amazon Developer page at https://developer.amazon.com/edw/home.html
 
