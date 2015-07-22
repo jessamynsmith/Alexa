@@ -1,8 +1,11 @@
 This page provies a baby-step by step tutorial on how to setup to 
 
-## <a name="Description"> Description</a>
+## <a name="SkillDescription"> Description</a>
 
-  Call a phone by saying to Amazon Echo referencing a skill AWS Lambda running Node.js
+  call a phone by saying to Amazon Echo (referencing a skill AWS Lambda running Node.js):
+
+Refer to https://developer.amazon.com/appsandservices/solutions/alexa/alexa-skills-kit/docs/developing-an-alexa-skill-as-a-lambda-function for more detailed information.
+
 
 ## <a name="ExamplePhrases"> Example Phrases</a>
 
@@ -10,11 +13,11 @@ This page provies a baby-step by step tutorial on how to setup to
   * Alexa, tell Phone to call Jack
   * Alexa, tell Phone to call Amy
 
-The code is inspired by Alan Cone's brilliant work shared at:
+The code was inspired by Alan Cone's brilliant work shared at:
 
   https://github.com/MrEggsalad/Echo-Call-Lost-Phone
 
-## <a name="NewARN"> Create an Alexa Skill to get an ARN</a>
+## <a name="NewAppId"> Create an Alexa Skill to get the Application ID</a>
 
 0. Use an internet browser to address 
   <a target="_blank" href="https://developer.amazon.com/edw/home.html#/">
@@ -25,11 +28,11 @@ The code is inspired by Alan Cone's brilliant work shared at:
 2. For Invocation Name: Phone.
 3. For Version: 1.0.
 4. For Endpoint, click <strong>Lambda ARN (Amazon Resource Name)</strong>
-5. In the Endpoint form field, enter: ???
+5. In the Endpoint form field, enter a placeholder:
 
- ``` 
-arn:aws:lambda:us-east-1:000000000000:function:myFunction
- ```
+  ``` 
+  arn:aws:lambda:us-east-1:000000000000:function:myFunction
+  ```
 
 0. Click Save.
 0. Highlight the <strong>Application ID</strong> at the top of the screen and 
@@ -58,13 +61,13 @@ arn:aws:lambda:us-east-1:000000000000:function:myFunction
   ]
 }
  ```
-0. <a name="SampleUtterances"> Specify Sample Utterances</a>
+0. <a name="SampleUtterances"> Specify Sample Utterances</a>, replacing "Name" with your name. For example, from:
 
  ```
 CallIntent call {Name|Control}
  ```
 
-4. Replace "Name" with your name. For example:
+to:
 
  ```
 CallIntent call {Wilson|Control}
@@ -81,19 +84,80 @@ CallIntent call {Wilson|Control}
 
 0. Click the icon to download the image.
 1. For Category, select Home-Automation.
-2. For Skill Description, type the description above.
+2. For Skill Description, type the <a href="#SkillDescription"> Description</a> above.
 3. For Example Phrases, use <a href="#ExamplePhrases"> the one above</a>.
 0. Click Save.
-1. Click <strong>Submit for Certification</strong>.
+
+We do not submit for certification until the ARN End-point is generated next.
+
+
+## <a name="Repo"> Establish and Edit Files</a>
+The .zip file created will be uploaded in the next section.
+
+If you have git client installed:
+
+1. Open a git console
+0. cd to the folder on your machine such as <strong>C:/githubs/wilsonmar</strong>.
+0. Clone the whole repo:
+
+  ```
+  git clone https://github.com/wilsonmar/Alexa.git
+  ```
+
+  This would install the Alexa folder, containing folder <strong>Echo-Call-Lost-Phone</strong>
+  which contains this tutorial and two files: index.js and AlexaSkill.js.
+
+Alternately, if you do NOT have git client installed:
+
+1. Create a folder on your machine such as <strong>C:/githubs</strong>.
+2. Create a folder named <strong>C:/githubs/wilsonmar/Alexa/Echo-Call-Lost-Phone</strong>.
+2. On the webpage https://github.com/wilsonmar/Alexa/Echo-Call-Lost-Phone,
+   click <strong>Download ZIP</strong>.
+4. Navigate to your Downloads folder for file <strong>Alexa-master.zip</strong>.
+5. Copy 
+
+## <a name="Index.JS"> Edit Index.js File</a>
+1. Invoke a text editor.
+2. Navigate to and open file <strong>index.js</strong>
+3. Edit line 6 to replace text defined by "var APP_ID = " with yours.
+
+  ```
+  var APP_ID = "amzn1.echo-sdk-ams.app.99999999...
+  ```
+
+4. Edit line 35 to replace "Name" with your name ("Wilson" in my case):
+
+  ```
+  case "Wilson":
+  ```
+
+5. Edit line 37 to replace ###-###-#### in var post_data with your phone number:
+
+  ```
+  var post_data = 'call%5Bnumber%5D=###-###-####&call ...
+  ```
+
+6. Leave as-is the IP address:
+
+  ``` 
+  host: '70.87.222.146',
+  ```
+
+6. Save the file.
 
 
 ## <a name="NewZIP"> Package .ZIP</a>
+Compress into file <strong>Archive.zip</strong> containing these files:
 
-7. and utilize intentSchema.json and 
+  * index.js (the version just edited)
+  * AlexaSkill.js
+  
+1. Navigate to the folder containing the files to be zipped.
+2. Hold down Ctrl/command to select both the index.js file and AlexaSkill.js files.
+3. Right-click or Control-click the combined files, then choose <strong>Compress<strong> from the shortcut menu.
 
 
-
-## <a name="NewLambda"> New Lambda Amazon Web Service</a>
+## <a name="NewLambda"> Create New Lambda Amazon Web Service</a>
 
 0. Use an internet browser to address <a target="_blank" href="http://console.amazon.com/">
    http://console.amazon.com/, the AWS Management Console</a>.
@@ -112,86 +176,49 @@ CallIntent call {Wilson|Control}
 0. In <strong>Step 2: Configure function</strong>, clicking the Learn More link creates a new tab.
 0. For Name: <strong>Phone</strong> (starting with a capital letter), or type whatever you're building.
 
-   For Description: `Phone call from the Echo via AWS Lambda running node`.
+   For <a href="#SkillDescription">Description</a>: `Phone call from the Echo via AWS Lambda running node`.
    
    This is different from the name spoken after Alexa, tell ...
    
-0. For Runtime, select Node.js because the example has a .js file (AlexaSkill.js)
+0. For Runtime, select Node.js because the example has .js files (index.js and AlexaSkill.js)
    to populate the inline code editor with code that implements a simple Alexa skill.
 0. In the Lambda function code section, select <strong>Upload a .ZIP file</strong>.
-1. For <strong>Handler</strong>, leave the default <strong>index.handler</strong>.
-0. For <strong>Role</strong>, select the recommended <strong>* Basic execution role</strong>.
+0. Click the gray <strong>Upload</strong> button.
+1. Navigate to the folder containing the zip file.
+2. Double click on the Archive.zip file to select it for upload.
 
-   A new tab appears. Leave the supplied IAM Role: Create a new IAM Role and Role Name: lambda_basic_execution.
-   
-0. Click the blue <strong>Allow</strong> button at the lower-right of the screen.
+1. For <strong>Handler</strong>, leave the default <strong>index.handler</strong>.
+0. For <strong>Role</strong>, click on the list. If one is listed under <strong>Use existing role</strong>,
+   select it. Otherwise, select <strong>* Basic execution role</strong> and when 
+   a new tab appears. Leave the supplied IAM Role: Create a new IAM Role and Role Name: lambda_basic_execution.
+  Click the blue <strong>Allow</strong> button at the lower-right of the screen.
+
 0. Under the Advanced settings section, leave default Memory (MB) 128 and Timeout 3.
 0. Click the blue <strong>Next</strong> button.
+0. Click the blue <strong>Create function</strong> button.
+1. Highlight the ARN at the upper-right corner of the screen, such as:
+
+  ```
+  arn:aws:lambda:us-east-1:234567891234:function:Phone 
+  ```
+
+0. Press Ctrl+C to copy it to the invisible Clipboard.
 
 
-0. Click Next to accept the default Alexa Skills Kit as the Event source type.
-0. Specify Function Name: Whatever.
-0. For Runtime Node.js, sample code is provided. You'll have to provide Java 8 code if you have that.
-1. For Handler, leave as <strong>index.handler</strong>
-0. Set the Role to <strong>basic execution role</strong> (as suggested) to define the AWS resources the function can access.
-1. In the new IAM window, click Allow creating a new IAM role. The role becomes "lambda_basic_execution".
-2. Click Next to accept defaul Memory of 128 and Timeout of 3.
-2. Click <strong>Create Function</strong> to save your new Lambda function.
-0. Click Test.
-1. In another browser window, read through template JSON coding for various types at  https://developer.amazon.com/public/solutions/alexa/alexa-skills-kit/docs/alexa-skills-kit-interface-reference.
-1. Edit the sample <strong>Event Template</strong> "Hello World".
+## <a name="Submit"> Submit for Certification</a>
+Return to the Amazon Developer page at https://developer.amazon.com/edw/home.html
 
-```
-{
-  "key1": "value1",
-  "key2": "value2",
-  "key3": "value3"
-}
-```
+1. Replace the placeholder with the ARN copied from the previous step: 
 
-# Echo-Call-Lost-Phone
-Use Amazon Echo to call your lost phone.
+  ``` 
+  arn:aws:lambda:us-east-1:000000000000:function:myFunction
+  ```
 
-## Setup
+2. If the skill had already been submitted, wait for it to be editable again.
 
-Refer to https://developer.amazon.com/appsandservices/solutions/alexa/alexa-skills-kit/docs/developing-an-alexa-skill-as-a-lambda-function for more detailed information.
+3. Otherwise, click <strong>Submit for Certification</strong>.
 
-1. In index.js on line 35 replace "Name" with your name.
-2. In index.js on line 37 replace ###-###-#### in var post_data with your phone number.
-3. Compress index.js and AlexaSkill.js into a ZIP archive and upload to AWS Lambda.
-4. Save and Invoke using the following:
-
- ```
-{
-  "version": "1.0",
-  "session": {
-    "new": false,
-    "application": {
-      "applicationId": "amzn1.echo-sdk-ams.app.[unique-value-here]"
-    },
-    "sessionId": "session1234",
-    "attributes": {},
-    "user": {
-      "userId": null
-    }
-  },
-  "request": {
-    "type": "IntentRequest",
-    "requestId": "request5678",
-    "intent": {
-      "name": "CallIntent",
-      "slots": {
-        "Control": {
-          "name": "Control",
-          "value": "Name"
-        }
-      }
-    }
-  }
-}
- ```
-
-6. Save everything 
-7. Say <a href="#ExamplePhrases"> Example Phrases</a> to tell Alexa to call the phone.
-8. Wait for your phone to ring.
+## <a name="UseIt"> Use It</a>
+4. Say <a href="#ExamplePhrases"> Example Phrases</a> to tell Alexa to call the phone.
+5. Wait for your phone to ring.
 
