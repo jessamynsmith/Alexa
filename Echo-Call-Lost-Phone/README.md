@@ -1,9 +1,16 @@
 This page provies a baby-step by step tutorial on how to setup to 
 call a phone by saying to Amazon Echo (referencing a skill AWS Lambda running Node.js):
 
+??? marks my "doubts", where I'm stuck or don't understand.
+
+
 ## <a name="ExamplePhrases"> Example Phrases</a>
 
-  * <strong>Alexa, tell Phone to call Wilson</strong>
+  <strong>Alexa, tell Phone to call Wilson</strong>
+
+	* "Alexa" is the wake word.
+	* "Phone" is the intent.
+	* "Wilson" is the name to send.
 
 The code was inspired by Alan Cone's brilliant work shared at:
 
@@ -28,10 +35,6 @@ Here are the steps to make this work:
 0. <a href="#UseIt"> Talk to Alexa to Really Use It</a>
 0. <a href="#ManageMemory"> Manage Memory</a>
 0. <a href="#ManageLogs"> Manage Log History</a>
-
-
-## <a name="SkillDescription"> Description</a>
-
 
 
 ## <a name="NewAppId"> Create an Alexa Skill to get the Application ID</a>
@@ -103,7 +106,10 @@ Here are the steps to make this work:
 
 0. Click the icon to download the image.
 1. For Category, select Home-Automation.
-2. For Skill Description, type the <a href="#SkillDescription"> Description</a> above.
+2. For Skill Description, type the <a name="SkillDescription"> Description</a>, such as:
+
+   Phone call from the Echo via AWS Lambda running node 
+
 3. For Example Phrases, use <a href="#ExamplePhrases"> the one above</a>.
 0. Click Save.
 
@@ -321,6 +327,9 @@ On the console.aws.amazon.com web page:
   "sessionAttributes": {}
 }
  ```
+
+QUESTION: How can I configure the system so Alexa responds with "Phone to Wilson placed"???
+
 
 ## <a name="UseIt"> Talk to Alexa to Really Use It</a>
 0. Say to Alexa <a href="#ExamplePhrases"> Example Phrases</a> to tell Alexa to call the phone.
