@@ -327,7 +327,7 @@ On the console.aws.amazon.com web page:
   "response": {
     "outputSpeech": {
       "type": "PlainText",
-      "text": ""
+      "text": "Phone to Wilson placed"
     },
     "shouldEndSession": true
   },
