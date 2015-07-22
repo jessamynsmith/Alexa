@@ -1,5 +1,4 @@
-This page provies a baby-step by step tutorial on how to set an Alexa skill running AWS Lambda Node.js service
-to make an automated (robot) call to a *static* phone number by saying to Amazon Echo:
+This page (shortened to https://goo.gl/oM2EiL) provides a baby-step by step tutorial on how to set an Alexa skill running AWS Lambda Node.js service to make an automated (robot) call to a *static* phone number by saying to Amazon Echo:
 
 ## <a name="ExamplePhrases"> Example Phrases</a>
 
