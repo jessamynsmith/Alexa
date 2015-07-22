@@ -217,6 +217,8 @@ Return to the Amazon Developer page at https://developer.amazon.com/edw/home.htm
 2. If the skill had already been submitted, wait for it to be editable again.
 
 3. Otherwise, click <strong>Submit for Certification</strong>.
+4. Click Yes to confirm.
+
 
 ## <a name="UseIt"> Use It</a>
 4. Say <a href="#ExamplePhrases"> Example Phrases</a> to tell Alexa to call the phone.
