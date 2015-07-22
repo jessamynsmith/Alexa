@@ -220,8 +220,9 @@ Compress into file <strong>Archive.zip</strong> containing these files:
    to populate the inline code editor with code that implements a simple Alexa skill.
 0. In the Lambda function code section, select <strong>Upload a .ZIP file</strong>.
 0. Click the gray <strong>Upload</strong> button.
-1. Navigate to the folder containing the zip file.
-2. Double click on the Archive.zip file to select it for upload.
+1. Navigate to the folder containing the zip file (Archive.zip).
+2. Click to select the .zip file for upload.
+3. Click the <strong>Open</strong> button.
 
 1. For <strong>Handler</strong>, leave the default <strong>index.handler</strong>.
 0. For <strong>Role</strong>, click on the list. If one is listed under <strong>Use existing role</strong>,
