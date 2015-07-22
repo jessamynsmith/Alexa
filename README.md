@@ -125,8 +125,9 @@ A <strong>Lambda function</strong> consists of your code, associated dependencie
 To develop a new Skill as a Lambda function, see
 https://developer.amazon.com/appsandservices/solutions/alexa/alexa-skills-kit/docs/developing-an-alexa-skill-as-a-lambda-function
 
-0. In the <a target="_blank" href="http://console.amazon.com/">
-   AWS Management Console</a>, select the Lambda eventing service.
+0. Use an internet browser to address <a target="_blank" href="http://console.amazon.com/">
+   http://console.amazon.com/, the AWS Management Console</a>.
+0. Select the AWS <strong>Lambda</strong> eventing service.
 1. Select the <strong>US East (N. Virginia)</strong> region.
 
     Initially the only region supported by the Alexa Skills Kit was "US East (N. Virginia)".
@@ -137,17 +138,31 @@ https://developer.amazon.com/appsandservices/solutions/alexa/alexa-skills-kit/do
     
     Look for #awslambda in Twitter.
 
-1. Click <strong>Get Started Now</strong>. Otherwise, click Create a <strong>Lambda Function</strong>.
-0. Enter a <strong>Blueprint</strong> Name and Description for the function: <strong>Whatever</strong>
+0. Click the blue <strong>Get Started Now</strong>. Otherwise, click Create a <strong>Lambda Function</strong>.
+0. In <strong>Step 1: Select blueprint</strong>, scroll down and click <strong>Skip</strong>
+   instead of clicking "alexa-skills-kit-color-expert".
+0. In <strong>Step 2: Configure function</strong>, clicking the Learn More link creates a new tab.
+0. For Name: <strong>Phone</strong> (starting with a capital letter), or type whatever you're building.
+
+   For Description: `Phone call from the Echo via AWS Lambda running node`.
    
-   Instead of "Whatever", it can be whatever you're building.
+   This is different from the name spoken after Alexa, tell ...
+   
+0. For Runtime, select Node.js because the example has a .js file (AlexaSkill.js)
+   to populate the inline code editor with code that implements a simple Alexa skill.
+0. In the Lambda function code section, select <strong>Upload a .ZIP file</strong>.
+1. For <strong>Handler</strong>, leave the default <strong>index.handler</strong>.
+0. For <strong>Role</strong>, select the recommended <strong>* Basic execution role</strong>.
 
-   This is different from the name spoken after Alexa...
+   A new tab appears. Leave the supplied IAM Role: Create a new IAM Role and Role Name: lambda_basic_execution.
+   
+0. Click the blue <strong>Allow</strong> button at the lower-right of the screen.
+0. Under the Advanced settings section, leave default Memory (MB) 128 and Timeout 3.
+0. Click the blue <strong>Next</strong> button.
 
-0. Click <strong>alexa-skills-kit-color-expert</strong>
-    to populate the inline code editor with code that implements a simple Alexa skill.
+
 0. Click Next to accept the default Alexa Skills Kit as the Event source type.
-0. Specify Function Name: Roku.
+0. Specify Function Name: Whatever.
 0. For Runtime Node.js, sample code is provided. You'll have to provide Java 8 code if you have that.
 1. For Handler, leave as <strong>index.handler</strong>
 0. Set the Role to <strong>basic execution role</strong> (as suggested) to define the AWS resources the function can access.
