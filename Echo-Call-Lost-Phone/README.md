@@ -11,6 +11,27 @@ The code was inspired by Alan Cone's brilliant work shared at:
 
 Refer to https://developer.amazon.com/appsandservices/solutions/alexa/alexa-skills-kit/docs/developing-an-alexa-skill-as-a-lambda-function for more detailed information.
 
+
+## <a name="Stsps"> Steps</a>
+Here are the steps to make this work:
+
+0. <a href="#NewAppId"> Create an Alexa Skill to get the Application ID</a>
+
+	<a name="SampleUtterances"> Specify Sample Utterances</a>
+	<a name="CreatePicture"> Create a picture</a>
+
+0. <a href="#Repo"> Establish and Edit Files</a>
+0. <a href="#Index.JS"> Edit Index.js File</a>
+0. <a href="#NewZIP"> Package .ZIP</a>
+0. <a href="#NewLambda"> Create New Lambda Amazon Web Service</a>
+0. <a href="#SampleEventTest"> Define Sample Event Template</a>
+0. <a href="#Submit"> Submit for Certification</a>
+0. <a href="#Test"> Test Web Service</a>
+0. <a href="#UseIt"> Talk to Alexa to Really Use It</a>
+0. <a href="#ManageMemory"> Manage Memory</a>
+0. <a href="#ManageLogs"> Manage Log History</a>
+
+
 ## <a name="SkillDescription"> Description</a>
 
 
@@ -76,7 +97,7 @@ Refer to https://developer.amazon.com/appsandservices/solutions/alexa/alexa-skil
 0. Click Next.
 
 
-1. <a name="CreatePicture"> Create a picture</a>
+0. <a name="CreatePicture"> Create a picture</a>
   <a target="_blank" href="https://cloud.githubusercontent.com/assets/300046/8825227/a7a9b624-303a-11e5-854d-a0e22c897cda.jpg">
   <img align="right" src="https://cloud.githubusercontent.com/assets/300046/8825227/a7a9b624-303a-11e5-854d-a0e22c897cda.jpg" /></a>
    Find a restriction-free graphic on <a target="_blank" href="http://images.google.com">
@@ -210,7 +231,7 @@ Compress into file <strong>Archive.zip</strong> containing these files:
 0. Press Ctrl+C to copy it to the invisible Clipboard.
 
 
-## <a name="SampleEventTest"> Sample Event Template Test</a>
+## <a name="SampleEventTest"> Define Sample Event Template</a>
 0. Select Sample event template drop-down <strong>Amexa Intent - MyColorIs</strong>.
 
 0. In place of the default provided, paste the following from file <strong>SampleTempate.json</strong>:
@@ -279,7 +300,7 @@ Return to the Amazon Developer page at https://developer.amazon.com/edw/home.htm
 4. Click Yes to confirm.
 
 
-## <a name="Test"> Test</a>
+## <a name="TestWS"> Test Web Service</a>
 On the console.aws.amazon.com web page:
 
 0. Click the blue <strong>Test</strong> button.
