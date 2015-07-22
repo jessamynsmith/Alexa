@@ -4,12 +4,17 @@ This page provies a baby-step by step tutorial on how to setup to call your phon
   * Alexa, tell Phone to call Jack
   * Alexa, tell Phone to call Amy
 
-The code is inspired by the work at:
+The code is inspired by Alan Cone's brilliant work shared at:
 
   https://github.com/MrEggsalad/Echo-Call-Lost-Phone
 
-## <a name="NewARN"> Create an ARN</a>
+## <a name="NewARN"> Create an Alexa Skill to get an ARN</a>
 
+0. Use an internet browser to address 
+  <a target="_blank" href="https://developer.amazon.com/edw/home.html#/">
+  https://developer.amazon.com/edw/home.html</a>
+
+7. and utilize intentSchema.json and 
 
 ## <a name="NewZIP"> Package .ZIP</a>
 
@@ -82,7 +87,8 @@ Refer to https://developer.amazon.com/appsandservices/solutions/alexa/alexa-skil
 2. In index.js on line 37 replace ###-###-#### in var post_data with your phone number.
 3. Compress index.js and AlexaSkill.js into a ZIP archive and upload to AWS Lambda.
 4. Save and Invoke using the following:
-```
+
+ ```
 {
   "version": "1.0",
   "session": {
@@ -110,7 +116,8 @@ Refer to https://developer.amazon.com/appsandservices/solutions/alexa/alexa-skil
     }
   }
 }
-```
+ ```
+
 4. In SampleUtterances.txt replace "Name" with your name.
 5. Set up new Alexa Skill on https://developer.amazon.com/edw/home.html#/ and utilize intentSchema.json and SampleUtterances.txt to help let Alexa know what she should be listening for.
 6. Save everything and tell Alexa to do call you and wait for your phone to ring.
