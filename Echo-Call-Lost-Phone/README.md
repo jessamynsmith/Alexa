@@ -122,14 +122,15 @@ The .zip file created will be uploaded in the next section.
 If you have git client installed:
 
 1. Open a git console
-0. cd to the folder on your machine such as <strong>C:/githubs/wilsonmar</strong>.
-0. Clone the whole repo:
+0. Create the folder path on your machine, such as <strong>C:/githubs/wilsonmar</strong>.
+0. <strong>cd</strong> to the folder path to allow git to create the sub-folder for the new repo.
+0. Clone the repo:
 
   ```
   git clone https://github.com/wilsonmar/Alexa.git
   ```
 
-  This would install the Alexa folder, containing folder <strong>Echo-Call-Lost-Phone</strong>
+  This would create the repo's top folder (Alexa), containing folder <strong>Echo-Call-Lost-Phone</strong>
   which contains this tutorial and two files: index.js and AlexaSkill.js.
 
 Alternately, if you do NOT have git client installed:
