@@ -119,13 +119,13 @@ Alternately, if you do NOT have git client installed:
 ## <a name="Index.JS"> Edit Index.js File</a>
 1. Invoke a text editor.
 2. Navigate to and open file <strong>index.js</strong>
-3. Edit line 6 to replace text defined by "var <strong>APP_ID</strong> = " with the one you created above.
+3. Edit line 6 to replace text defined by "var <strong>APP_ID</strong> = " with the one <a href="#NewAppId">created above</a>.
 
   ```
   var APP_ID = "amzn1.echo-sdk-ams.app.99999999...
   ```
 
-4. Edit line 35 to replace "Name" with your name ("Wilson" in my case):
+4. Edit line 35 to replace "Name" with the name associated with a phone ("Wilson" in my case):
 
   ```
   case "Wilson":
@@ -210,18 +210,10 @@ Compress into file <strong>Archive.zip</strong> containing these files:
 0. Press Ctrl+C to copy it to the invisible Clipboard.
 
 
-## <a name="SampleEventTest"> Sample Event Test</a>
-0. In place of the default provided:
+## <a name="SampleEventTest"> Sample Event Template Test</a>
+0. Select Sample event template drop-down <strong>Amexa Intent - MyColorIs</strong>.
 
- ```
- {
-  "key3": "value3",
-  "key2": "value2",
-  "key1": "value1"
-}
- ```
-
-   Paste the following:
+0. In place of the default provided, paste the following from file <strong>SampleTempate.json</strong>:
 
  ```
  {
@@ -253,9 +245,19 @@ Compress into file <strong>Archive.zip</strong> containing these files:
 }
   ```
 
-0. Change the <strong>applicationId</strong> with the APP_ID created earlier in this tutorial.
+0. Change the <strong>applicationId</strong> with the <a href="#NewAppId"><strong>APP_ID</strong> created above</a>.
 
-1. Change the Name to the name of the phone ("Wilson" in my case). 
+  ```
+  "applicationId": "amzn1.echo-sdk-ams.app.[unique-value-here]"
+  ```
+
+4. Replace "Name" with the name associated with a phone ("Wilson" in my case):
+
+  ```
+   "value": "Name"
+  ```
+
+
 2. Click <strong>Test</strong>.
 
 
