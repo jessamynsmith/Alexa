@@ -314,10 +314,12 @@ Return to the Amazon Developer page at https://developer.amazon.com/edw/home.htm
 ## <a name="TestWS"> Test Web Service</a>
 On the console.aws.amazon.com web page:
 
-0. Click the blue <strong>Test</strong> button.
+0. Click the blue <strong>Test</strong> button to emulate what Alexa sends to the Amazon server over the public internet
+   and the Lambda eventing web service.
 
 0. Your phone should now ring.
-1. If you answer, an automated voice says "Hello there ...".
+
+0. If you answer, an automated voice says "Hello there ...".
 
 0. Under the Monitoring tab, it should say "Execution result: succeeded" with this JSON:
 
