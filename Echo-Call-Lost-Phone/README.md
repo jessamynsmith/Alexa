@@ -346,8 +346,10 @@ On the console.aws.amazon.com web page:
 0. Say to Alexa <a href="#ExamplePhrases"> Example Phrases</a> to tell Alexa to call the phone.
 
   If Alexa responds "I didn't hear a person to call", give up ???
+  
+  QUESTION: What is the procedure for "debugging" if Alexa doesn't understand a command???
 
-0. Wait for your phone to ring.
+0. Wait for your phone to ring. For how long to expect waiting, see below.
 
 
 ## <a name="ManageMemory"> Manage Memory</a>
