@@ -119,7 +119,7 @@ Alternately, if you do NOT have git client installed:
 ## <a name="Index.JS"> Edit Index.js File</a>
 1. Invoke a text editor.
 2. Navigate to and open file <strong>index.js</strong>
-3. Edit line 6 to replace text defined by "var APP_ID = " with yours.
+3. Edit line 6 to replace text defined by "var <strong>APP_ID</strong> = " with the one you created above.
 
   ```
   var APP_ID = "amzn1.echo-sdk-ams.app.99999999...
@@ -131,7 +131,7 @@ Alternately, if you do NOT have git client installed:
   case "Wilson":
   ```
 
-5. Edit line 37 to replace ###-###-#### in var post_data with your phone number:
+5. Edit line 37 to replace ###-###-#### in var post_data with <strong>your phone number</strong>:
 
   ```
   var post_data = 'call%5Bnumber%5D=###-###-####&call ...
@@ -143,8 +143,10 @@ Alternately, if you do NOT have git client installed:
   host: '70.87.222.146',
   ```
 
-7. Use a browser to visit http://70.87.222.146 (PhoneMyPhone.com) and 
+7. Use a browser to visit the IP address http://70.87.222.146 (PhoneMyPhone.com) and 
    subscribe to their email so you hear when they announce changes.
+
+  Also consider a donation to keep their server running.
 
 8. Save the file.
 
