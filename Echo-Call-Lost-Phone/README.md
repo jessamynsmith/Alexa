@@ -337,6 +337,8 @@ On the console.aws.amazon.com web page:
 }
  ```
 
+   In real life, Alexa would say the outputSpeech text above.
+ 
 
 ## <a name="UseIt"> Talk to Alexa to Really Use It</a>
 0. Say to Alexa <a href="#ExamplePhrases"> Example Phrases</a> to tell Alexa to call the phone.
