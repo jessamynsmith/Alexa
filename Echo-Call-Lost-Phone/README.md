@@ -184,7 +184,7 @@ Alternately, if you do NOT have git client installed:
 9. Save the file.
 
 
-## <a name="NewZIP"> Package .ZIP</a>
+## <a name="NewZIP"> Function Package .ZIP</a>
 Compress into file <strong>Archive.zip</strong> containing these files:
 
   * index.js (the version just edited)
@@ -193,7 +193,9 @@ Compress into file <strong>Archive.zip</strong> containing these files:
 1. Navigate to the folder containing the files to be zipped.
 2. Hold down Ctrl/command to select both the index.js file and AlexaSkill.js files.
 3. Right-click or Control-click the combined files, then choose <strong>Compress</strong> from the shortcut menu.
-
+4. Make sure that the zip file is less the <strong>50 MB</strong> limit imposed for compressed function zip files
+   as noted in
+   https://docs.aws.amazon.com/lambda/latest/dg/limits.html
 
 ## <a name="NewLambda"> Create New Lambda Amazon Web Service</a>
 
