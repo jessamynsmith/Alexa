@@ -1,6 +1,5 @@
 This page provies a baby-step by step tutorial on how to set an Alexa skill running AWS Lambda Node.js service
-to make an automated (robot) call to a static phone number by saying to Amazon Echo:
-
+to make an automated (robot) call to a *static* phone number by saying to Amazon Echo:
 
 ## <a name="ExamplePhrases"> Example Phrases</a>
 
@@ -10,9 +9,11 @@ to make an automated (robot) call to a static phone number by saying to Amazon E
 	* "Phone" is the intent.
 	* "Wilson" is the name to send.
 
-The code was inspired by Alan Cone's brilliant work shared at:
+As of this writing, even though the Amazon Echo hardware has both microphones and spearkers,
+Alexa cannot function like a speakerphone.
 
-  https://github.com/MrEggsalad/Echo-Call-Lost-Phone
+The code was inspired by Alan Cone's brilliant work shared at:
+https://github.com/MrEggsalad/Echo-Call-Lost-Phone
 
 Refer to https://developer.amazon.com/appsandservices/solutions/alexa/alexa-skills-kit/docs/developing-an-alexa-skill-as-a-lambda-function for more detailed information.
 
