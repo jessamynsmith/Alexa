@@ -1,11 +1,5 @@
 This page provies a baby-step by step tutorial on how to setup to 
-
-## <a name="SkillDescription"> Description</a>
-
-  call a phone by saying to Amazon Echo (referencing a skill AWS Lambda running Node.js):
-
-Refer to https://developer.amazon.com/appsandservices/solutions/alexa/alexa-skills-kit/docs/developing-an-alexa-skill-as-a-lambda-function for more detailed information.
-
+call a phone by saying to Amazon Echo (referencing a skill AWS Lambda running Node.js):
 
 ## <a name="ExamplePhrases"> Example Phrases</a>
 
@@ -14,6 +8,12 @@ Refer to https://developer.amazon.com/appsandservices/solutions/alexa/alexa-skil
 The code was inspired by Alan Cone's brilliant work shared at:
 
   https://github.com/MrEggsalad/Echo-Call-Lost-Phone
+
+Refer to https://developer.amazon.com/appsandservices/solutions/alexa/alexa-skills-kit/docs/developing-an-alexa-skill-as-a-lambda-function for more detailed information.
+
+## <a name="SkillDescription"> Description</a>
+
+
 
 ## <a name="NewAppId"> Create an Alexa Skill to get the Application ID</a>
 
