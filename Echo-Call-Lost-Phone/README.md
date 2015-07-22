@@ -1,7 +1,5 @@
-This page provies a baby-step by step tutorial on how to setup to 
-call a phone by saying to Amazon Echo (referencing a skill AWS Lambda running Node.js):
-
-??? marks my "doubts", where I'm stuck or don't understand.
+This page provies a baby-step by step tutorial on how to set an Alexa skill running AWS Lambda Node.js service
+to make an automated (robot) call to a static phone number by saying to Amazon Echo:
 
 
 ## <a name="ExamplePhrases"> Example Phrases</a>
@@ -17,6 +15,8 @@ The code was inspired by Alan Cone's brilliant work shared at:
   https://github.com/MrEggsalad/Echo-Call-Lost-Phone
 
 Refer to https://developer.amazon.com/appsandservices/solutions/alexa/alexa-skills-kit/docs/developing-an-alexa-skill-as-a-lambda-function for more detailed information.
+
+??? in this marks my "doubts", where I'm stuck or don't understand.
 
 
 ## <a name="Stsps"> Steps</a>
