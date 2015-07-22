@@ -21,6 +21,9 @@ Refer to https://developer.amazon.com/appsandservices/solutions/alexa/alexa-skil
 
 
 ## <a name="Stsps"> Steps</a>
+<a target="_blank" title="alexa_skill_diagram_v01" href="https://cloud.githubusercontent.com/assets/300046/8833044/e177ce84-3069-11e5-9097-85d15ed7e49c.png">
+<img alt="alexa_skill_diagram_v01" src="https://cloud.githubusercontent.com/assets/300046/8833044/e177ce84-3069-11e5-9097-85d15ed7e49c.png" /></a>
+
 Here are the steps to make this work:
 
 0. <a href="#NewAppId"> Create an Alexa Skill to get the Application ID</a>
