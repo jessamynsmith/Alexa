@@ -143,7 +143,10 @@ Alternately, if you do NOT have git client installed:
   host: '70.87.222.146',
   ```
 
-6. Save the file.
+7. Use a browser to visit http://70.87.222.146 (PhoneMyPhone.com) and 
+   subscribe to their email so you hear when they announce changes.
+
+8. Save the file.
 
 
 ## <a name="NewZIP"> Package .ZIP</a>
