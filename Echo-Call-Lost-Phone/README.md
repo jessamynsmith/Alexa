@@ -1,5 +1,7 @@
 This page provies a baby-step by step tutorial on how to setup to call your phone by saying to Amazon Echo
 
+## <a name="ExamplePhrases"> Example Phrases</a>
+
   * <strong>Alexa, tell Phone to call me</strong>
   * Alexa, tell Phone to call Jack
   * Alexa, tell Phone to call Amy
@@ -14,9 +16,66 @@ The code is inspired by Alan Cone's brilliant work shared at:
   <a target="_blank" href="https://developer.amazon.com/edw/home.html#/">
   https://developer.amazon.com/edw/home.html</a>
 
-7. and utilize intentSchema.json and 
+0. Click the yellow <strong>Add a New Skill</strong> at the right.
+1. For Name: Phone
+2. For Invocation Name: Phone.
+3. For Version: 1.0.
+4. For Endpoint, click <strong>Lambda ARN (Amazon Resource Name)</strong>
+5. In the Endpoint form field, enter: ???
+
+ ``` 
+arn:aws:lambda:us-east-1:000000000000:function:myFunction
+ ```
+
+0. Click Save.
+0. Copy the <strong>Application ID</strong> at the top of the screen:
+
+amzn1.echo-sdk-ams.app.399228c6-3452-461b-92ef-7af1ff8a4111
+
+0. Click Next.
+
+0. <a name="IntentSchema"> Specify Intent Schema</a>
+
+ ```
+{
+  "intents": [
+    {
+      "intent": "CallIntent",
+      "slots": [
+        {
+          "name": "Control",
+          "type": "LITERAL"
+        }
+      ]
+    }
+  ]
+}
+ ```
+0. <a name="SampleUtterances"> Specify Sample Utterances</a>
+
+ ```
+CallIntent call {Name|Control}
+ ```
+
+0. Click Next.
+1. Click Enable so skill is enabled for testing on this account.
+0. Click Next.
+
+1. <a name="CreatePicture"> Create a picture</a>
+
+   Find a graphic on http://images.google.com, then edit it to a 108x108 pixel png file. 
+
+0. Click the icon to download the image.
+1. For Category, select Home-Automation.
+2. For Skill Description, type the description above.
+3. For Example Phrases, use <a href="#ExamplePhrases"> the one above</a>.
+0. Click Save.
+1. Click <strong>Submit for Certification</strong>.
+
 
 ## <a name="NewZIP"> Package .ZIP</a>
+
+7. and utilize intentSchema.json and 
 
 
 
