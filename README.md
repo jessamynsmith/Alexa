@@ -138,7 +138,12 @@ https://developer.amazon.com/appsandservices/solutions/alexa/alexa-skills-kit/do
     Look for #awslambda in Twitter.
 
 1. Click <strong>Get Started Now</strong>. Otherwise, click Create a <strong>Lambda Function</strong>.
-0. Enter a <strong>Blueprint</strong> Name and Description for the function: <strong>Roku</strong>
+0. Enter a <strong>Blueprint</strong> Name and Description for the function: <strong>Whatever</strong>
+   
+   Instead of "Whatever", it can be whatever you're building.
+
+   This is different from the name spoken after Alexa...
+
 0. Click <strong>alexa-skills-kit-color-expert</strong>
     to populate the inline code editor with code that implements a simple Alexa skill.
 0. Click Next to accept the default Alexa Skills Kit as the Event source type.
