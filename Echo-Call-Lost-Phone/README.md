@@ -154,7 +154,7 @@ Compress into file <strong>Archive.zip</strong> containing these files:
   
 1. Navigate to the folder containing the files to be zipped.
 2. Hold down Ctrl/command to select both the index.js file and AlexaSkill.js files.
-3. Right-click or Control-click the combined files, then choose <strong>Compress<strong> from the shortcut menu.
+3. Right-click or Control-click the combined files, then choose <strong>Compress</strong> from the shortcut menu.
 
 
 ## <a name="NewLambda"> Create New Lambda Amazon Web Service</a>
