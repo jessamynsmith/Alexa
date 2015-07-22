@@ -30,7 +30,7 @@ arn:aws:lambda:us-east-1:000000000000:function:myFunction
 0. Click Save.
 0. Copy the <strong>Application ID</strong> at the top of the screen:
 
-amzn1.echo-sdk-ams.app.399228c6-3452-461b-92ef-7af1ff8a4111
+   amzn1.echo-sdk-ams.app.399228c6-3452-461b-92ef-7af1ff8a4111
 
 0. Click Next.
 
