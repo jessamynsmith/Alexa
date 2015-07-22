@@ -9,9 +9,7 @@ Refer to https://developer.amazon.com/appsandservices/solutions/alexa/alexa-skil
 
 ## <a name="ExamplePhrases"> Example Phrases</a>
 
-  * <strong>Alexa, tell Phone to call me</strong>
-  * Alexa, tell Phone to call Jack
-  * Alexa, tell Phone to call Amy
+  * <strong>Alexa, tell Phone to call Wilson</strong>
 
 The code was inspired by Alan Cone's brilliant work shared at:
 
