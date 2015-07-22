@@ -150,30 +150,36 @@ Alternately, if you do NOT have git client installed:
   var APP_ID = "amzn1.echo-sdk-ams.app.99999999...
   ```
 
-4. Edit line 35 to replace "Name" with the name associated with a phone ("Wilson" in my case):
+4. Add response text to be spoken by Alexa to acknowledge the request:
+
+	```
+	response.tell("Phone to Wilson placed");
+	```
+	
+5. Edit line 35 to replace "Name" with the name associated with a phone ("Wilson" in my case):
 
   ```
   case "Wilson":
   ```
 
-5. Edit line 37 to replace ###-###-#### in var post_data with <strong>your phone number</strong>:
+6. Edit line 37 to replace ###-###-#### in var post_data with <strong>your phone number</strong>:
 
   ```
   var post_data = 'call%5Bnumber%5D=###-###-####&call ...
   ```
 
-6. Leave as-is the IP address:
+7. Leave as-is the IP address:
 
   ``` 
   host: '70.87.222.146',
   ```
 
-7. Use a browser to visit the IP address http://70.87.222.146 (PhoneMyPhone.com) and 
+8. Use a browser to visit the IP address http://70.87.222.146 (PhoneMyPhone.com) and 
    subscribe to their email so you hear when they announce changes.
 
   Also consider a donation to keep their server running.
 
-8. Save the file.
+9. Save the file.
 
 
 ## <a name="NewZIP"> Package .ZIP</a>
@@ -327,8 +333,6 @@ On the console.aws.amazon.com web page:
   "sessionAttributes": {}
 }
  ```
-
-QUESTION: How can I configure the system so Alexa responds with "Phone to Wilson placed"???
 
 
 ## <a name="UseIt"> Talk to Alexa to Really Use It</a>
