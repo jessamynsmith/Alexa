@@ -23,6 +23,8 @@ Refer to https://developer.amazon.com/appsandservices/solutions/alexa/alexa-skil
 <a target="_blank" title="alexa_skill_diagram_v01" href="https://cloud.githubusercontent.com/assets/300046/8888819/ea40f816-327a-11e5-91ed-550b1fea01dd.png">
 <img alt="alexa_skill_diagram_v01" src="https://cloud.githubusercontent.com/assets/300046/8888819/ea40f816-327a-11e5-91ed-550b1fea01dd.png" /></a>
 
+
+## <a name="TOC"> Contents</a>
 Here are the steps to make this work:
 
 0. <a href="#NewAppId"> Create an Alexa Skill to get the Application ID</a>
