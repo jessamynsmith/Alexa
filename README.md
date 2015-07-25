@@ -136,11 +136,17 @@ describes Alexa Skills Kit Voice Design Best Practices:
 These options are defined ???
 
 ## <a name="RequestTypes"> Request Types</a>
-Each service must accept and respond to these types of requests:
+If request sent by Alexa are being process by 
+the Java library, the SpeechletServlet class determines the type of request
+and calls the corresponding Speechlet method for the Session object:
 
-* LaunchRequest
-* IntentRequest
-* SessionEndedRequest
+* <a target="_blank" href="https://developer.amazon.com/public/solutions/alexa/alexa-skills-kit/docs/alexa-skills-kit-interface-reference#LaunchRequest">LaunchRequest</a> by Java onLaunch()
+
+* <a target="_blank" href="https://developer.amazon.com/public/solutions/alexa/alexa-skills-kit/docs/alexa-skills-kit-interface-reference#IntentRequest">IntentRequest</a> by Java onIntent()
+
+* <a target="_blank" href="https://developer.amazon.com/public/solutions/alexa/alexa-skills-kit/docs/alexa-skills-kit-interface-reference#SessionEndedRequest">SessionEndedRequest</a> by Java onSessionEnded()
+
+<a target="_blank" href="https://developer.amazon.com/public/solutions/alexa/alexa-skills-kit/docs/alexa-skills-kit-interface-reference">Alexa Skills Kit Interface Reference</a>
 
 
 ## <a name="RokuFiles"> Roku Github Files</a>
