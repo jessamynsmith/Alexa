@@ -1,3 +1,22 @@
+## <a name="RokuFiles"> Roku Github Files</a>
+https://github.com/MrEggsalad/Echo-Roku-Voice-Control
+presents a sample set of files to setup Amazon Echo to control Roku
+utilizing Roku's External Control Guide API http://sdkdocs.roku.com/display/sdkdoc/External+Control+Guide .
+
+The files:
+
+* AlexaSkill.js
+* index.js
+* intentSchema.json
+* SampleUtterances.txt
+* .gitattributes
+* .gitignore
+* README.md
+* LICENSE.txt
+
+Let's use the contents of these files to setup our own Roku voice controller.
+
+
 
 
 ### <a name="PortForwarding"> Port Forwarding</a>
