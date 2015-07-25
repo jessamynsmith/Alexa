@@ -4,6 +4,9 @@ Alexa software.
 
 This repo contains a folder for each sample Alexa Skills:
 
+* <a href="Echo-Call-Lost-Phone">Echo-Call-Lost-Phone</a> 
+  makes use of a Lambda service which calls a 3rd-party web service that robot-calls a phone number.
+
 * Roku involves setting up a connection over the public internet to the Roku box.
 
 * Slack channel update
