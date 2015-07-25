@@ -1,7 +1,34 @@
-This page provides to experienced programmers a deep technical introduction to 
+This page aims to provide to experienced programmers a deep technical introduction to 
 Amazon's Echo hardware and associated
 Alexa software.
 
+This repo contains a folder for each sample Alexa Skills:
+
+* Roku involves setting up a connection over the public internet to the Roku box.
+
+* Slack channel update
+* Sample provided by Amazon in Java
+
+* Phillips
+* Wink
+* Tweet to send
+* Facebook blog to create
+* Wordpress blog entry to create
+
+
+## <a name="Lambda"> Lambda Amazon Web Service</a>
+http://aws.amazon.com/lambda/
+is a back-end processing service that's more general than just processing Amazon Echo requests.
+Kinda like http://ifttt.com and http://zapier.com.
+
+http://aws.amazon.com/api-gateway/ provides HTTPS secure access.
+
+A <strong>Lambda function</strong> consists of your code, associated dependencies, and configuration.
+
+To develop a new Skill as a Lambda function, see
+https://developer.amazon.com/appsandservices/solutions/alexa/alexa-skills-kit/docs/developing-an-alexa-skill-as-a-lambda-functi
+
+   Look for #awslambda in Twitter.
 
 
 ## <a name="Press"> Blogs about This</a>
@@ -22,38 +49,7 @@ Alexa software.
   The Alexa section of Amazon's Developer Forum</a>
 
 
-## <a name="ExternalIntents"> External Intents</a>
-Amazon provides some interfaces:
 
-   * Phillips
-   * Wink
- 
-3rd-party interfaces:
-
-      * Roku
-      * Tweet to send
-
-            * Alexa, ask Twitter to say "whatever".
-
-      * Facebook blog to create
-
-            * Alexa, ask Facebook to say "whatever".
-
-      * Wordpress blog entry to create
-
-## <a name="Lambda"> Lambda Amazon Web Service</a>
-http://aws.amazon.com/lambda/
-is a back-end processing service that's more general than just processing Amazon Echo requests.
-Kinda like http://ifttt.com and http://zapier.com.
-
-http://aws.amazon.com/api-gateway/ provides HTTPS secure access.
-
-A <strong>Lambda function</strong> consists of your code, associated dependencies, and configuration.
-
-To develop a new Skill as a Lambda function, see
-https://developer.amazon.com/appsandservices/solutions/alexa/alexa-skills-kit/docs/developing-an-alexa-skill-as-a-lambda-functi
-
-   Look for #awslambda in Twitter.
 
 
 ## <a name="Slack"> Slots in 3rd Party API (Slack)</a>
@@ -61,7 +57,7 @@ https://aws.amazon.com/blogs/compute/slack-dictation-an-amazon-echo-and-aws-lamb
 by Tim Wagner (https://twitter.com/timallenwagner)
 presents an example using AWS Lambda to post text Alexa converts to text in a Slack chat room.
 
-Also follow tweets at https://twitter.com/@lambdatips.
+Follow Tim's tweets at https://twitter.com/@lambdatips.
 
 VIDEO: https://s3.amazonaws.com/awscomputeblogmedia/Lambda+Plus+Echo+Plus+Slack+Demo.mp4
 shows the voice commands and code: 
@@ -135,6 +131,7 @@ describes Alexa Skills Kit Voice Design Best Practices:
 
 These options are defined ???
 
+
 ## <a name="RequestTypes"> Request Types</a>
 If request sent by Alexa are being process by 
 the Java library, the SpeechletServlet class determines the type of request
@@ -147,25 +144,6 @@ and calls the corresponding Speechlet method for the Session object:
 * <a target="_blank" href="https://developer.amazon.com/public/solutions/alexa/alexa-skills-kit/docs/alexa-skills-kit-interface-reference#SessionEndedRequest">SessionEndedRequest</a> by Java onSessionEnded()
 
 <a target="_blank" href="https://developer.amazon.com/public/solutions/alexa/alexa-skills-kit/docs/alexa-skills-kit-interface-reference">Alexa Skills Kit Interface Reference</a>
-
-
-## <a name="RokuFiles"> Roku Github Files</a>
-https://github.com/MrEggsalad/Echo-Roku-Voice-Control
-presents a sample set of files to setup Amazon Echo to control Roku
-utilizing Roku's External Control Guide API http://sdkdocs.roku.com/display/sdkdoc/External+Control+Guide .
-
-The files:
-
-* AlexaSkill.js
-* index.js
-* intentSchema.json
-* SampleUtterances.txt
-* .gitattributes
-* .gitignore
-* README.md
-* LICENSE.txt
-
-Let's use the contents of these files to setup our own Roku voice controller.
 
 
 
