@@ -11,7 +11,13 @@ This page (shortened to https://goo.gl/oM2EiL) provides a baby-step by step tuto
 As of this writing, even though the Amazon Echo hardware has both microphones and spearkers,
 Alexa cannot function like a speakerphone.
 
-The code was inspired by Alan Cone's brilliant work shared at:
+	* "Alexa call my phone"
+
+is what initiatiates IFTTT recipe
+https://ifttt.com/recipes/288400-find-your-phone-by-asking-alexa
+to combine the Alexa Channel and Phone Call Channel.
+
+The code described here was inspired by Alan Cone's brilliant work shared at:
 https://github.com/MrEggsalad/Echo-Call-Lost-Phone
 
 Refer to https://developer.amazon.com/appsandservices/solutions/alexa/alexa-skills-kit/docs/developing-an-alexa-skill-as-a-lambda-function for more detailed information.
