@@ -29,7 +29,7 @@ applied to my Mac OS Yosemite.
 
    Because SimpleDB and RDS were unselected these messages were avoided:
    
-   <img alt="SimpleDB Error" 
+   <img alt="SimpleDB Error" width="300"
    src="https://cloud.githubusercontent.com/assets/300046/9089046/7c46ca5a-3b50-11e5-896a-bf99e40c72b3.png" />
 
 0. Click Yes to the restart pop-up.
@@ -42,7 +42,7 @@ applied to my Mac OS Yosemite.
 
    If AWS items are not listed, those libraries were not installed.
 
-   <img src="https://cloud.githubusercontent.com/assets/300046/9089803/42e287a0-3b54-11e5-8601-03ea5d5f0951.png" />
+   <img width="300" src="https://cloud.githubusercontent.com/assets/300046/9089803/42e287a0-3b54-11e5-8601-03ea5d5f0951.png" />
 
 
 ### <a name="SetupEclipse"> Setup Eclipse IAM</a>
