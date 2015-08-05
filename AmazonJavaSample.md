@@ -23,6 +23,9 @@ applied to my Mac OS Yosemite.
 2. I accept and Finish.
 3. Click OK to unsigned warning.
 
+### <a name="SetupEclipse"> Setup Eclipse IAM</a>
+Follow http://docs.aws.amazon.com/AWSToolkitEclipse/latest/GettingStartedGuide/tke_setup_creds.html
+to create ACCESS KEY  and download credentials file.
 
 ## <a name="AlexaSkillsKit">Java Sample AlexaSkillsKit.zip</a>
 0. While signed into the Developer Console, download
