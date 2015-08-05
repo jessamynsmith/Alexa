@@ -2,6 +2,9 @@ This is my intepretation and extension of the excellent
 https://github.com/jjaquinta/EchoProofOfConcepts/tree/master/jo.echo.lambda
 applied to my Mac OS Yosemite.
 
+### <a name="SetupEclipse"> Setup IAM Credentials</a>
+0. Create a folder to put credentials files (that what Eclipse needs)
+
 ## <a name="SetupEclipse"> Setup Eclipse</a>
 0. Download <strong>Eclipse IDE for Java Developers</strong> from https://eclipse.org/downloads,
    file eclipse-java-mars-R-macosx-cocoa-x86_64.tar.gz (162 MB).
@@ -44,10 +47,22 @@ applied to my Mac OS Yosemite.
 
    <img width="300" src="https://cloud.githubusercontent.com/assets/300046/9089803/42e287a0-3b54-11e5-8601-03ea5d5f0951.png" />
 
+   The above augments instructions at 
+   http://docs.aws.amazon.com/AWSToolkitEclipse/latest/GettingStartedGuide/tke_setup_creds.html
+   to create ACCESS KEY  and download credentials file.
 
-### <a name="SetupEclipse"> Setup Eclipse IAM</a>
-Follow http://docs.aws.amazon.com/AWSToolkitEclipse/latest/GettingStartedGuide/tke_setup_creds.html
-to create ACCESS KEY  and download credentials file.
+0. Eclipse calculates the default Private Key Directory as:
+
+   ```
+   /Users/wilsonmar/.ec2
+   ```
+
+   But that doesn't exist and needs to be created.
+
+   BLAH: Clicking Browse button only allows folders to be chosen.
+
+   This is where I'm stuck.
+   
 
 ## <a name="AlexaSkillsKit">Java Sample AlexaSkillsKit.zip</a>
 0. While signed into the Developer Console, download
