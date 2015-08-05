@@ -18,26 +18,34 @@ applied to my Mac OS Yosemite.
    It's described at:
    http://docs.aws.amazon.com/AWSToolkitEclipse/latest/GettingStartedGuide/tke_setup.html
 0. Wait for Pending.
-0. Check box for all 13 in the AWS Toolkit (plug-in) for Eclipse.
-0. Uncheck <strong>Amazon SimpleDB Mangement</strong> to avoid the error that shows up later.
+0. Check box for all 13 in the AWS Toolkit (plug-in) for Eclipse but NOT
+
+   * <strong>except Amazon SimpleDB Mangement</strong> to avoid the error that shows up later.
+   * RDS Management
 
 1. Click Next, 3 times.
 2. I accept and Finish.
 3. Click OK to the unsigned warning.
 
-   Here's where I got stuck:
+   Because SimpleDB and RDS were unselected these messages were avoided:
    
    <img alt="SimpleDB Error" 
    src="https://cloud.githubusercontent.com/assets/300046/9089046/7c46ca5a-3b50-11e5-896a-bf99e40c72b3.png" />
 
-   So I unchecked this.
-   
+0. Click Yes to the restart pop-up.
+0. After restart, type in the Access Key ID and Secret Access Key from AWS. Click Finish.
+1. Click Yes to credentials have been changed pop-up.
 
-### <a name="SetupEclipse"> Setup Eclipse IAM</a>
-4. Click menu Eclipse and <strong>Preferences</strong>.
+   There should now be an <strong>AWS Explorer</strong> tab listing AWS services.
+
+2. click menu Eclipse and <strong>Preferences</strong>.
 
    If AWS items are not listed, those libraries were not installed.
 
+   <img src="https://cloud.githubusercontent.com/assets/300046/9089803/42e287a0-3b54-11e5-8601-03ea5d5f0951.png" />
+
+
+### <a name="SetupEclipse"> Setup Eclipse IAM</a>
 Follow http://docs.aws.amazon.com/AWSToolkitEclipse/latest/GettingStartedGuide/tke_setup_creds.html
 to create ACCESS KEY  and download credentials file.
 
