@@ -21,6 +21,10 @@ This repo contains a folder for each sample Alexa Skills:
 * Facebook blog to create
 * Wordpress blog entry to create
 
+## <a name="Competitors"> Competitors</a>
+Alexa responds to utterances from the many shows doing fake voice recognition:
+* Computer, tea, earl gray. hot.
+* https://www.luis.ai/?ref=1981319 Microsoft's 
 
 ## <a name="Lambda"> Lambda Amazon Web Service</a>
 http://aws.amazon.com/lambda/
