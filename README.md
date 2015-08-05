@@ -252,3 +252,8 @@ http://docs.aws.amazon.com/lambda/latest/dg/getting-started.html
 
 ## <a name="SmartThings"> SmartThings</a>
 https://community.smartthings.com/t/playing-around-with-amazon-echo-technical-interface-discussion/14887/314
+
+https://www.youtube.com/watch?v=ZxXWphy6Rs4 An Introduction to Amazon Echo and the Alexa Skills Kit
+July 3, 2015 by David Isbitski, Amazon Echo Evangelist.
+His video is described at 
+https://developer.amazon.com/public/community/post/Tx9JUX8VZNUZY5/Free-Video-Training-An-Introduction-to-Amazon-Echo-and-the-Alexa-Skills-K
