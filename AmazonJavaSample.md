@@ -19,13 +19,19 @@ applied to my Mac OS Yosemite.
    http://docs.aws.amazon.com/AWSToolkitEclipse/latest/GettingStartedGuide/tke_setup.html
 0. Wait for Pending.
 0. Check box for all 13 in the AWS Toolkit (plug-in) for Eclipse.
+0. Uncheck <strong>Amazon SimpleDB Mangement</strong> to avoid the error that shows up later.
+
 1. Click Next, 3 times.
 2. I accept and Finish.
 3. Click OK to the unsigned warning.
 
    Here's where I got stuck:
    
-   <img src="https://cloud.githubusercontent.com/assets/300046/9089046/7c46ca5a-3b50-11e5-896a-bf99e40c72b3.png" />
+   <img alt="SimpleDB Error" 
+   src="https://cloud.githubusercontent.com/assets/300046/9089046/7c46ca5a-3b50-11e5-896a-bf99e40c72b3.png" />
+
+   So I unchecked this.
+   
 
 ### <a name="SetupEclipse"> Setup Eclipse IAM</a>
 4. Click menu Eclipse and <strong>Preferences</strong>.
