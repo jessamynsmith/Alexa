@@ -51,6 +51,8 @@ applied to my Mac OS Yosemite.
    http://docs.aws.amazon.com/AWSToolkitEclipse/latest/GettingStartedGuide/tke_setup_creds.html
    to create ACCESS KEY  and download credentials file.
 
+0. Click Key Pair.
+
 0. Eclipse calculates the default Private Key Directory as:
 
    ```
