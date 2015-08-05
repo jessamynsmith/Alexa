@@ -11,7 +11,7 @@ applied to my Mac OS Yosemite.
 1. Move to Trash the original tar.gz file expanded.
 1. Copy the <strong>Eclipse.app<strong> folder in the Application folder.
 0. Double-click on Eclipse.app to open it.
-1. Select a workspace (default of <strong>/Users/<yourusername>/Documents/workspace</strong>.
+1. Select a workspace (default of <strong>/Users/yourusername/Documents/workspace</strong>.
 0. Click X to the Welcome screen.
 
 0. In Help | Install New Software, work with (add) http://aws.amazon.com/eclipse and press Enter.
