@@ -1,14 +1,16 @@
+This is my intepretation and extension of the excellent
+https://github.com/jjaquinta/EchoProofOfConcepts/tree/master/jo.echo.lambda
 
 ## <a name="AlexaSkillsKit">Java Sample AlexaSkillsKit.zip</a>
-While signed into the Developer Console, download
-https://developer.amazon.com/edw/res/download/AlexaSkillsKit.zip
+0. While signed into the Developer Console, download
+   https://developer.amazon.com/edw/res/download/AlexaSkillsKit.zip
 
-In the <strong>samples</strong> folder, 
-helloworld and session folders each contain a
-<strong>slu</strong> folder containing the 
-IntentSchema.json and SampleUtterances.baf file:
+   In the <strong>samples</strong> folder, 
+   helloworld and session folders each contain a
+   <strong>slu</strong> folder containing the 
+   IntentSchema.json and SampleUtterances.baf file:
 
-```
+      ```
 MyColorIsIntent  my color is {dark brown|Color}
 MyColorIsIntent  my color is {green|Color}
 MyColorIsIntent  my favorite color is {red|Color}
@@ -22,21 +24,21 @@ WhatsMyColorIntent what is my favorite color
 WhatsMyColorIntent say my favorite color
 WhatsMyColorIntent tell me my favorite color
 WhatsMyColorIntent tell me what my favorite color is
-```
+      ```
 
-The intents specified (MyColorIntents and WhatsMyColorIntent) are defined in file
+      The intents specified (MyColorIntents and WhatsMyColorIntent) are defined in file
       <strong>IntentSchema.json</strong>
 
-These are the same as for the Node.js example.
+   These are the same as for the Node.js example.
 
-However, this set of sample assets was written to run on a Java, or more specifically, a J2EE server.
+   However, this set of sample assets was written to run on a Java, or more specifically, a J2EE server.
 
-So each folder in samples contains a Speechlet.java file.
+   So each folder in samples contains a Speechlet.java file.
 
-Also in the <strong>samples</strong> folder 
-is a <strong>build.xml</strong> file for the ant build tool to use:
+   Also in the <strong>samples</strong> folder 
+   is a <strong>build.xml</strong> file for the ant build tool to use:
 
-```
+      ```
 <!-- Ant build script for compiling and running the Echo SDK samples. -->
 <project name="Amazon Echo SDK Samples" default="run" basedir=".">
     <path id="java.sdk.classpath">
@@ -63,7 +65,7 @@ is a <strong>build.xml</strong> file for the ant build tool to use:
         </java>
     </target>
 </project>
-```
+      ```
 
 The <strong>Launcher.java</strong> file in turn references libraries in the
 top-level "third-party" folder containing jar files in folder j2ee_servlet, Jetty.
