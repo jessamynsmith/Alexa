@@ -2,10 +2,10 @@ This is my intepretation and extension of the excellent
 https://github.com/jjaquinta/EchoProofOfConcepts/tree/master/jo.echo.lambda
 applied to my Mac OS Yosemite.
 
-## <a name="Eclipse"> Eclipse</a>
+## <a name="SetupEclipse"> Setup Eclipse</a>
 0. Download <strong>Eclipse IDE for Java Developers</strong> from https://eclipse.org/downloads,
    file eclipse-java-mars-R-macosx-cocoa-x86_64.tar.gz (162 MB).
-0. In a Terminal, `tar xyz eclipse-java-mars-R-macosx-cocoa-x86_64.tar.gz` to untar to a new folder.
+0. In a Terminal, `tar -zxvf eclipse-java-mars-R-macosx-cocoa-x86_64.tar.gz` to untar to a new folder.
 1. Open a new finder window to copy the folder in the Application folder.
 
 1. In Help | Install New Software, work with (add) http://aws.amazon.com/eclipse --
