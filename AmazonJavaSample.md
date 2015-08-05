@@ -21,6 +21,7 @@ applied to my Mac OS Yosemite.
 0. Check box for all 13 in the AWS Toolkit (plug-in) for Eclipse.
 1. Click Next, 3 times.
 2. I accept and Finish.
+3. Click OK to unsigned warning.
 
 
 ## <a name="AlexaSkillsKit">Java Sample AlexaSkillsKit.zip</a>
