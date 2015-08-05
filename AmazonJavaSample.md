@@ -25,7 +25,7 @@ applied to my Mac OS Yosemite.
 
    Here's where I got stuck:
    
-   
+   <img src="https://cloud.githubusercontent.com/assets/300046/9089046/7c46ca5a-3b50-11e5-896a-bf99e40c72b3.png" />
 
 ### <a name="SetupEclipse"> Setup Eclipse IAM</a>
 4. Click menu Eclipse and <strong>Preferences</strong>.
