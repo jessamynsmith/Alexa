@@ -62,7 +62,8 @@ applied to my Mac OS Yosemite.
    BLAH: Clicking Browse button only allows folders to be chosen.
 
    This is where I'm stuck.
-   
+
+   Can't figure out http://docs.aws.amazon.com/AWSToolkitEclipse/latest/GettingStartedGuide/tke_setup_keypairs.html   
 
 ## <a name="AlexaSkillsKit">Java Sample AlexaSkillsKit.zip</a>
 0. While signed into the Developer Console, download
