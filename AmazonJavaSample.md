@@ -22,11 +22,16 @@ applied to my Mac OS Yosemite.
 1. Click Next, 3 times.
 2. I accept and Finish.
 3. Click OK to the unsigned warning.
+
+   Here's where I got stuck:
+   
+   
+
+### <a name="SetupEclipse"> Setup Eclipse IAM</a>
 4. Click menu Eclipse and <strong>Preferences</strong>.
 
    If AWS items are not listed, those libraries were not installed.
 
-### <a name="SetupEclipse"> Setup Eclipse IAM</a>
 Follow http://docs.aws.amazon.com/AWSToolkitEclipse/latest/GettingStartedGuide/tke_setup_creds.html
 to create ACCESS KEY  and download credentials file.
 
