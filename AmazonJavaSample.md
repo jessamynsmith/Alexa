@@ -6,11 +6,22 @@ applied to my Mac OS Yosemite.
 0. Download <strong>Eclipse IDE for Java Developers</strong> from https://eclipse.org/downloads,
    file eclipse-java-mars-R-macosx-cocoa-x86_64.tar.gz (162 MB).
 0. In a Terminal, `tar -zxvf eclipse-java-mars-R-macosx-cocoa-x86_64.tar.gz` to untar to a new folder.
-1. Open a new finder window to copy the folder in the Application folder.
 
-1. In Help | Install New Software, work with (add) http://aws.amazon.com/eclipse --
-   the AWS Toolkit (plug-in) for Eclipse described at:
+0. Open a new finder window.
+1. Move to Trash the original tar.gz file expanded.
+1. Copy the <strong>Eclipse.app<strong> folder in the Application folder.
+0. Double-click on Eclipse.app to open it.
+1. Select a workspace (default of <strong>/Users/<yourusername>/Documents/workspace</strong>.
+0. Click X to the Welcome screen.
+
+0. In Help | Install New Software, work with (add) http://aws.amazon.com/eclipse and press Enter.
+   It's described at:
    http://docs.aws.amazon.com/AWSToolkitEclipse/latest/GettingStartedGuide/tke_setup.html
+0. Wait for Pending.
+0. Check box for all 13 in the AWS Toolkit (plug-in) for Eclipse.
+1. Click Next, 3 times.
+2. I accept and Finish.
+
 
 ## <a name="AlexaSkillsKit">Java Sample AlexaSkillsKit.zip</a>
 0. While signed into the Developer Console, download
